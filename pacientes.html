@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Navbar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+        <form class="d-flex ">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pacientes.html">Pacientes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./perfil.html">Perfil</a>
+            </li>
+            <!-- <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li> -->
+          </ul>
+          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+        <div class="profile-content">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
+            <h6>John Doe</h6>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- pacientes -->
+  <section class="container my-5">
+    <div class="d-flex justify-content-between mb-3">
+      <h2>Pacientes:</h2>
+      <div class="d-flex">
+        <button class="btn btn-light mx-1">Filtro 1</button>
+        <button class="btn btn-light mx-1">Filtro 2</button>
+      </div>
+    </div>
+    <div class="row">
+      <!--  -->
+      <div class="col-12 col-lg-4">
+        <div class="paciente-box box-sm">
+          <div class="d-flex mb-3 align-items-center">
+            <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
+            <h5>Ricardo Palacios </h5>
+          </div>
+          <h6>Email : daniel.kristensen@example.com</h6>
+          <h6>Ciudad: Ciudad de México</h6>
+          <small>
+            <a href="#/" data-bs-toggle="modal" data-bs-target="#modal-pacientes">Ver más</a>
+          </small>
+        </div>
+      </div>
+        <!--  -->
+        <div class="col-12 col-lg-4">
+          <div class="paciente-box box-sm">
+            <div class="d-flex mb-3 align-items-center">
+              <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
+              <h5>Ricardo Palacios</h5>
+            </div>
+            <h6>Email : mailtest@text.com</h6>
+            <h6>Ciudad: Ciudad de México</h6>
+            <small>
+              <a href="#/" data-bs-toggle="modal" data-bs-target="#modal-pacientes">Ver más</a>
+            </small>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="paciente-box box-sm">
+            <div class="d-flex mb-3 align-items-center">
+              <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
+              <h5>Ricardo Palacios</h5>
+            </div>
+            <h6>Email : mailtest@text.com</h6>
+            <h6>Ciudad: Ciudad de México</h6>
+            <small>
+              <a href="#/" data-bs-toggle="modal" data-bs-target="#modal-pacientes">Ver más</a>
+            </small>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="paciente-box box-sm">
+            <div class="d-flex mb-3 align-items-center">
+              <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
+              <h5>Ricardo Palacios</h5>
+            </div>
+            <h6>Email : mailtest@text.com</h6>
+            <h6>Ciudad: Ciudad de México</h6>
+            <small>
+              <a href="#/" data-bs-toggle="modal" data-bs-target="#modal-pacientes">Ver más</a>
+            </small>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="paciente-box box-sm">
+            <div class="d-flex mb-3 align-items-center">
+              <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
+              <h5>Ricardo Palacios</h5>
+            </div>
+            <h6>Email : mailtest@text.com</h6>
+            <h6>Ciudad: Ciudad de México</h6>
+            <small>
+              <a href="#/" data-bs-toggle="modal" data-bs-target="#modal-pacientes">Ver más</a>
+            </small>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="paciente-box box-sm">
+            <div class="d-flex mb-3 align-items-center">
+              <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
+              <h5>Ricardo Palacios</h5>
+            </div>
+            <h6>Email : mailtest@text.com</h6>
+            <h6>Ciudad: Ciudad de México</h6>
+            <small>
+              <a href="#/" data-bs-toggle="modal" data-bs-target="#modal-pacientes">Ver más</a>
+            </small>
+          </div>
+        </div>
+        <div class="col-12 col-lg-4">
+          <div class="paciente-box box-sm">
+            <div class="d-flex mb-3 align-items-center">
+              <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" alt="">
+              <h5>Ricardo Palacios</h5>
+            </div>
+            <h6>Email : mailtest@text.com</h6>
+            <h6>Ciudad: Ciudad de México</h6>
+            <small>
+              <a href="#/" data-bs-toggle="modal" data-bs-target="#modal-pacientes">Ver más</a>
+            </small>
+          </div>
+        </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="site-footer d-none">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-12 col-md-6">
+          <h6>About</h6>
+          <p class="text-justify">Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an initiative  to help the upcoming programmers with the code. Scanfcode focuses on providing the most efficient code or snippets as the code wants to be simple. We will help programmers build up concepts in different programming languages that include C, C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP, Android, SQL and Algorithm.</p>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Categories</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/category/c-language/">C</a></li>
+            <li><a href="http://scanfcode.com/category/front-end-development/">UI Design</a></li>
+            <li><a href="http://scanfcode.com/category/back-end-development/">PHP</a></li>
+            <li><a href="http://scanfcode.com/category/java-programming-language/">Java</a></li>
+            <li><a href="http://scanfcode.com/category/android/">Android</a></li>
+            <li><a href="http://scanfcode.com/category/templates/">Templates</a></li>
+          </ul>
+        </div>
+
+        <div class="col-xs-6 col-md-3">
+          <h6>Quick Links</h6>
+          <ul class="footer-links">
+            <li><a href="http://scanfcode.com/about/">About Us</a></li>
+            <li><a href="http://scanfcode.com/contact/">Contact Us</a></li>
+            <li><a href="http://scanfcode.com/contribute-at-scanfcode/">Contribute</a></li>
+            <li><a href="http://scanfcode.com/privacy-policy/">Privacy Policy</a></li>
+            <li><a href="http://scanfcode.com/sitemap/">Sitemap</a></li>
+          </ul>
+        </div>
+      </div>
+      <hr>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 col-sm-6 col-xs-12">
+          <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by 
+       <a href="#">Scanfcode</a>.
+          </p>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-12">
+          <ul class="social-icons">
+            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>   
+          </ul>
+        </div>
+      </div>
+    </div>
+</footer>
+  <!-- Modal informacion del paciente -->
+  <div class="modal fade" id="modal-pacientes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Información del paciente</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <div class="toggleable-box edit-clients-box">
+                <div class="toggleable-content">
+                  <div class="toggleable-item active-item" data-target="#company-data-box">Datos generales</div>
+                  <div class="toggleable-item" data-target="#company-users-list">Antecedentes</div>
+                  <div class="toggleable-item" data-target="#company-plan-box ">Tratamiento</div>
+                </div>
+                <div class="box">
+                  <div class="box-option active-option" id="company-data-box">
+                    <div class="row flex align-items-center">
+                      <div class="col-12 col-md-4">
+                      <div class="img-cont">
+                          <input type="file">
+                          <img src="https://images.unsplash.com/photo-1529123202249-4f6224196c9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-8 client-info-box">
+                        <div class="form">
+                          <div class="form-group">
+                            <label for="">Nombre</label>
+                            <input type="text" class="form-control" value="Ann with an e">
+                          </div>
+                          <div class="form-group">
+                            <label for="">F. de nacimiento</label>
+                            <input type="text" class="form-control" value="10/10/1880">
+                          </div>
+                          <div class="form-group">
+                            <label for="">Representante legal</label>
+                            <input type="text" class="form-control" value="Mattew Williams">
+                          </div>
+                          <div class="form-group">
+                            <label for="">Dirección</label>
+                            <input type="text" class="form-control" value="12 Wall Street, Syracuse,ny, 13204  United States">
+                          </div>
+                          <div class="form-group">
+                            <label for="">Teléfono</label>
+                            <input type="text" class="form-control" value="55 53 32 53 63">
+                          </div>
+                          <div class="form-group">
+                            <label for="">Email</label>
+                            <input type="text" class="form-control" value="IamAnn@gmail.com">
+                          </div>
+                          <div class="form-group">
+                            <label for="">RFC</label>
+                            <input type="text" class="form-control" value="ODJAS8DSAAH020HFS8">
+                          </div>
+                          <div class="form-group">
+                            <label for="">Médico tratante</label>
+                            <input type="text" class="form-control" value="Ricardo Cruz">
+                          </div>
+                        </div>
+                    </div>
+                    <div class="btn-cont">
+                      <button class="btn btn-main">Guardar</button>
+                      <button class="btn btn-light border">Limpiar</button>
+                    </div>
+                    </div>
+                  </div>
+                  <div class="box-option" id="company-users-list">
+                      formulario de antecedentes
+                  </div>
+                  <div class="box-option" id="company-plan-box">
+                      formulario de trataminto y contenido de archivos subidos
+                 </div>
+                </div>
+              </div>
+            <!-- Fin -->
+        </div>
+      </div>
+    </div>
+  </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
