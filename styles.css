@@ -16,13 +16,44 @@ body {
 }
 
 a {
-  color: #00a461;
+  color: #00a461 !important;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
+  cursor: pointer;
 }
 a:hover {
   filter: brightness(0.9);
   color: #00a461;
+}
+
+.box {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-bottom: 1rem;
+}
+
+.dashboard-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.dashboard-box i,
+.dashboard-box svg {
+  font-size: 1.5rem;
+  margin-right: 1.5rem;
+}
+.dashboard-box a {
+  flex-basis: 100%;
+  padding: 0 !important;
+}
+.dashboard-box h6 {
+  font-weight: bold;
+  opacity: 0.75;
+}
+.dashboard-box h5 {
+  font-weight: bold;
 }
 
 .toggleable-box {
@@ -309,7 +340,7 @@ a:hover {
 .box-sm {
   background: #fff;
   padding: 1.5rem;
-  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
 }
 
 .paciente-box {
@@ -323,6 +354,64 @@ a:hover {
   max-width: 3.5rem;
   aspect-ratio: 1;
   margin-right: 1rem;
+}
+
+/* carousel */
+.carousel {
+  position: relative;
+}
+
+.carousel-item img {
+  object-fit: cover;
+}
+
+#carousel-thumbs {
+  background: rgba(255, 255, 255, 0.3);
+  bottom: 0;
+  left: 0;
+  padding: 0 50px;
+  right: 0;
+}
+
+#carousel-thumbs img {
+  border: 5px solid transparent;
+  cursor: pointer;
+}
+
+#carousel-thumbs img:hover {
+  border-color: rgba(255, 255, 255, 0.3);
+}
+
+#carousel-thumbs .selected img {
+  border-color: #fff;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+  width: 50px;
+}
+
+@media all and (max-width: 767px) {
+  .carousel-container #carousel-thumbs img {
+    border-width: 3px;
+  }
+}
+@media all and (min-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    position: absolute;
+  }
+}
+@media all and (max-width: 576px) {
+  .carousel-container #carousel-thumbs {
+    background: #ccccce;
+  }
+}
+.box-who {
+  border: 1px solid #dcdcdc;
+}
+.box-who i,
+.box-who svg {
+  font-size: 5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
