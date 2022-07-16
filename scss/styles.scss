@@ -404,7 +404,9 @@ a{
   position: relative;
 }
 .carousel-item img {
-  object-fit: cover;
+  //object-fit: cover;
+  height:40rem;
+  object-fit:contain;
 }
 #carousel-thumbs {
   background: rgba(255,255,255,.3);
@@ -416,6 +418,8 @@ a{
 #carousel-thumbs img {
   border: 5px solid transparent;
   cursor: pointer;
+  filter: blur(5px);
+  height: 5rem;
 }
 #carousel-thumbs img:hover {
   border-color: rgba(255,255,255,.3);
@@ -452,3 +456,46 @@ a{
   }
 }
 
+
+
+//QR section
+
+.search-container{
+  position:relative;
+  width:100%;
+  display: flex;
+  flex: 1;
+}
+
+.qrcode-text {
+  padding-right:1.7em;
+  margin-right:0;
+  border:1px solid #dcdcdc;
+  padding:.5rem;
+  flex:1;
+
+}
+.qrcode-text-btn {
+  display:inline-block;
+   background:url(//dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg) 50% 50% no-repeat;
+   height:1em;
+   width:1.7em;
+   margin-left:-1.7em;
+   cursor:pointer;
+   position:relative;
+   top:13px;
+   left:-5px;
+}
+.qrcode-text-btn > input[type=file] {
+  position:absolute;
+   overflow:hidden;
+   width:1px;
+   height:1px;
+   opacity:0
+}
+.btn-main{
+  background-color: #00a461;
+  color: white;
+  border: none;
+  padding: 0 2.5rem;
+}
