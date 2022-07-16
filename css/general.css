@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: #e5e9eb;
+  color: #606060;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.btn-main {
+  background: #00a461;
+  color: white;
+}
+
+a {
+  color: #00a461 !important;
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+  filter: brightness(0.9);
+  color: #00a461;
+}
+
+.box {
+  background: #fff;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-bottom: 1rem;
+}
+
+/*# sourceMappingURL=general.css.map */
