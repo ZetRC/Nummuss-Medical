@@ -18,6 +18,10 @@ body{
     color: white;
 }
 
+.text-main{
+  color: #00a461;
+}
+
 a{
     color: $main !important;
     transition:all .3s ease-in-out;
@@ -498,4 +502,66 @@ a{
   color: white;
   border: none;
   padding: 0 2.5rem;
+}
+
+//collapsable
+
+.list-content{
+	margin-bottom: 10px;
+}
+.list-content a{
+	padding: 10px 15px;
+    width: 100%;
+    display: inline-block;
+    background-color: #f5f5f5;
+    position: relative;
+    color: #565656;
+    font-weight: 400;
+    border-radius: 4px;
+}
+.list-content a[aria-expanded="true"] i{
+	transform: rotate(180deg);
+}
+.list-content a i{
+	text-align: right;
+    position: absolute;
+    top: 15px;
+    right: 10px;
+    transition: 0.5s;
+}
+
+//perfil
+
+.perfil-box{
+  width: 100%;
+  max-width: 70rem;
+  margin:0 auto;
+  padding:2.5rem;
+  margin-top: 70px;
+  .general-box{
+    display:flex;
+    .general-info{
+      padding:0 1.5rem;
+      
+      flex: 1;
+      .general-item{
+        border-bottom:1px solid #dcdcdc;
+        padding-bottom: .6rem;
+        margin-bottom:.6rem;
+        width: 100%;
+        
+
+        label{
+          min-width: 10rem;
+        }
+      }
+    }
+    img{
+      width: 100%;
+      max-width:15rem;
+      max-height: 20rem;
+      object-fit:cover;
+      border-radius: 8px;
+    }
+  }
 }
