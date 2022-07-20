@@ -71,11 +71,11 @@ button:focus,
     height: 2px;
     background: #e0e0e0;
     position: absolute;
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 15px;
+    top: 25px;
     //z-index: 1;
 }
 
@@ -108,9 +108,10 @@ span.round-tab i{
     color:#555555;
 }
 .wizard li.active span.round-tab {
-        background: #00a461;
+    background: #00a461;
     color: #fff;
     border-color: #00a461;
+    transition:all .3s ease-in-out;
 }
 .wizard li.active span.round-tab i{
     color: #5bc0de;
@@ -121,7 +122,7 @@ span.round-tab i{
 }
 
 .wizard .nav-tabs > li {
-    width: 25%;
+    width: 20%;
 }
 
 .wizard li:after {
