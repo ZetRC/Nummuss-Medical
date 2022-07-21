@@ -140,14 +140,16 @@ a:hover {
   position: relative;
   width: 100%;
   height: 100%;
+  padding: 0 0.5rem;
 }
 .edit-clients-box .img-cont img {
   width: inherit;
   margin: 0 auto;
   display: block;
   max-width: 400px;
-  max-height: 400px;
   object-fit: contain;
+  border-radius: 0.5rem;
+  overflow: hidden;
 }
 .edit-clients-box .img-cont input[type=file] {
   position: absolute;

@@ -162,13 +162,16 @@ a{
         position:relative;
         width: 100%;
         height: 100%;
+        padding: 0 .5rem;
         img{
             width:inherit;
             margin: 0 auto;
             display: block;
             max-width: 400px;
-            max-height: 400px;
+            //max-height: 400px;
             object-fit: contain;
+            border-radius:.5rem;
+            overflow:hidden;  
          }
     
          input[type=file]{

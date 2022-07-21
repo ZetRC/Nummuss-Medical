@@ -226,9 +226,11 @@
                 <div class="toggleable-content">
                   <div class="toggleable-item active-item" data-target="#datos-generales-box">Datos generales</div>
                   <div class="toggleable-item" data-target="#antecedentes-list">Antecedentes</div>
-                  <div class="toggleable-item" data-target="#company-plan-box ">Documentos Subidos</div>
+                  <div class="toggleable-item" data-target="#actualmente-list">Actualmente</div>
+                  <div class="toggleable-item" data-target="#documentos-box ">Documentos Subidos</div>
                 </div>
                 <div class="box">
+                  <!-- Datos Generales -->
                   <div class="box-option active-option" id="datos-generales-box">
                     <div class="row flex align-items-center">
                       <div class="col-12 col-md-4">
@@ -279,8 +281,8 @@
                     </div>
                     </div>
                   </div>
+                  <!-- Historial Familiar -->
                   <div class="box-option" id="antecedentes-list">
-                    <!--  -->
                     <div class="list-content">
                       <a href="#listone" data-toggle="" aria-expanded="false" aria-controls="listone">Historial familiar<i class="fa fa-chevron-down"></i></a>
                       <div class="p-3" id="listone">
@@ -294,10 +296,9 @@
                         </h6>
                       </div>
                     </div>
-                    <!--  -->
                     <div class="list-content">
-                      <a href="#listone" data-toggle="" aria-expanded="false" aria-controls="listone">Enfermedades pre-existentes<i class="fa fa-chevron-down"></i></a>
-                      <div class="p-3" id="listone">
+                      <a href="#listwo" data-toggle="" aria-expanded="false" aria-controls="listwo">Enfermedades pre-existentes<i class="fa fa-chevron-down"></i></a>
+                      <div class="p-3" id="listwo">
                         <h6>
                           <h6 class="flex">
                             <span class="mr-2">Diabetes</span>
@@ -308,10 +309,9 @@
                         </h6>
                       </div>
                     </div>
-                    <!--  -->
                     <div class="list-content">
-                      <a href="#listone" data-toggle="" aria-expanded="false" aria-controls="listone">Cirugias pre-existentes<i class="fa fa-chevron-down"></i></a>
-                      <div class="p-3" id="listone">
+                      <a href="#listthree" data-toggle="" aria-expanded="false" aria-controls="listthree">Cirugias pre-existentes<i class="fa fa-chevron-down"></i></a>
+                      <div class="p-3" id="listthree">
                         <h6>
                           <h6 class="flex">
                             <span class="mr-2">Cirugía en pancreas</span>
@@ -330,128 +330,171 @@
                         </h6>
                       </div>
                     </div>
-                    <!--  -->
-                    <!--  -->
                   </div>
-                  <div class="box-option" id="company-plan-box">
-                                            <!-- Custom Carousel -->
-                                            <div class="container mt-5 ">
-                                              <div class="carousel-container position-relative row">
-                                              <div id="myCarousel" class="carousel slide" data-ride="carousel">
-                                                <div class="carousel-inner">
-                                                  <div class="carousel-item active" data-slide-number="0">
-                                                    <img 
-                                                      src="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" 
-                                                      class="d-block w-100"   
-                                                      alt="..." 
-                                                      data-remote="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" 
-                                                      data-type="image" 
-                                                      data-toggle="lightbox" 
-                                                      data-gallery="example-gallery"
-                                                    >
-                                                  </div>
-                                                  <div class="carousel-item" data-slide-number="1">
-                                                    <img 
-                                                      src="https://images.unsplash.com/photo-1601642910940-ae43dc8cf421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" 
-                                                      class="d-block w-100" 
-                                                      alt="..." 
-                                                      data-remote="https://images.unsplash.com/photo-1601642910940-ae43dc8cf421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" 
-                                                      data-type="image" 
-                                                      data-toggle="lightbox" 
-                                                      data-gallery="example-gallery"
-                                                      >
-                                                  </div>
-                                                  <div class="carousel-item" data-slide-number="2">
-                                                    <img 
-                                                      src="https://images.unsplash.com/photo-1516069677018-378515003435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1529&q=80" 
-                                                      class="d-block w-100" 
-                                                      alt="..." 
-                                                      data-remote="https://images.unsplash.com/photo-1516069677018-378515003435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1529&q=80" 
-                                                      data-type="image" 
-                                                      data-toggle="lightbox" 
-                                                      data-gallery="example-gallery"
-                                                      >
-                                                  </div>
-                                                  <div class="carousel-item" data-slide-number="3">
-                                                    <img 
-                                                    src="https://images.unsplash.com/photo-1564725075388-cc8338732289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
-                                                    class="d-block w-100" 
-                                                    alt="..." 
-                                                    data-remote="https://images.unsplash.com/photo-1564725075388-cc8338732289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
-                                                    data-type="image" 
-                                                    data-toggle="lightbox" 
-                                                    data-gallery="example-gallery"
-                                                    >
-                                                  </div>
-                                                </div>
-                                              </div>
-                                              <!-- Carousel Navigation -->
-                                              <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
-                                                <div class="carousel-inner">
-                                                  <div class="carousel-item active">
-                                                    <div class="row mx-0">
-                                                      <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
-                                                        <img 
-                                                          src="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" 
-                                                          class="img-fluid" 
-                                                          alt="..."
-                                                          >
-                                                      </div>
-                                                      <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
-                                                        <img 
-                                                          src="https://images.unsplash.com/photo-1601642910940-ae43dc8cf421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" 
-                                                          class="img-fluid" 
-                                                          alt="..."
-                                                          >
-                                                      </div>
-                                                      <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
-                                                        <img 
-                                                          src="https://images.unsplash.com/photo-1516069677018-378515003435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1529&q=80" 
-                                                          class="img-fluid" 
-                                                          alt="..."
-                                                          >
-                                                      </div>
-                                                      <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
-                                                        <img 
-                                                          src="https://images.unsplash.com/photo-1564725075388-cc8338732289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
-                                                          class="img-fluid" 
-                                                          alt="..."
-                                                          >
-                                                      </div>
-                                                    </div>
-                                                  </div>
-                                                  <div class="carousel-item">
-                                                    <div class="row mx-0">
-                                                      <!-- <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
-                                                        <img src="https://source.unsplash.com/uanoYn1AmPs/600x400/" class="img-fluid" alt="...">
-                                                      </div>
-                                                      <div id="carousel-selector-7" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="7">
-                                                        <img src="https://source.unsplash.com/_snqARKTgoc/600x400/" class="img-fluid" alt="...">
-                                                      </div>
-                                                      <div id="carousel-selector-8" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="8">
-                                                        <img src="https://source.unsplash.com/M9F8VR0jEPM/600x400/" class="img-fluid" alt="...">
-                                                      </div>
-                                                      <div id="carousel-selector-9" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="9">
-                                                        <img src="https://source.unsplash.com/Q1p7bh3SHj8/600x400/" class="img-fluid" alt="...">
-                                                      </div> -->
-                                                      <div class="col-2 px-1 py-2"></div>
-                                                      <div class="col-2 px-1 py-2"></div>
-                                                    </div>
-                                                  </div>
-                                                </div>
-                                                <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
-                                                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                  <span class="sr-only">Previous</span>
-                                                </a>
-                                                <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
-                                                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                  <span class="sr-only">Next</span>
-                                                </a>
-                                              </div>
-                                              </div> <!-- /row -->
-                                              </div> <!-- /container -->
-                                            <!--  -->
-                      
+                  <!-- Actualmente -->
+                  <div class="box-option" id="actualmente-list">
+                    <div class="list-content">
+                      <a href="#listfour" data-toggle="" aria-expanded="false" aria-controls="listfour">Enfermedades crónicas actuales<i class="fa fa-chevron-down"></i></a>
+                      <div class="p-3" id="listfour">
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Diabetes</span>
+                            -
+                            <span>09/03/2021</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Hipertensión</span>
+                            -
+                            <span>04/11/2020</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="list-content">
+                      <a href="#listfive" data-toggle="" aria-expanded="false" aria-controls="listfive">Medicamentos tomados actualmente<i class="fa fa-chevron-down"></i></a>
+                      <div class="p-3" id="listfive">
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Metformina.</span>
+                            -
+                            <span>09/03/2021</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Píldoras liberadoras de insulina.</span>
+                            -
+                            <span>04/11/2020</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Documentos -->
+                  <div class="box-option" id="documentos-box">
+                    <!-- Custom Carousel -->
+                    <div class="container mt-5 ">
+                      <div class="carousel-container position-relative row">
+                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-slide-number="0">
+                            <img 
+                              src="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" 
+                              class="d-block w-100"   
+                              alt="..." 
+                              data-remote="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" 
+                              data-type="image" 
+                              data-toggle="lightbox" 
+                              data-gallery="example-gallery"
+                            >
+                          </div>
+                          <div class="carousel-item" data-slide-number="1">
+                            <img 
+                              src="https://images.unsplash.com/photo-1601642910940-ae43dc8cf421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" 
+                              class="d-block w-100" 
+                              alt="..." 
+                              data-remote="https://images.unsplash.com/photo-1601642910940-ae43dc8cf421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" 
+                              data-type="image" 
+                              data-toggle="lightbox" 
+                              data-gallery="example-gallery"
+                              >
+                          </div>
+                          <div class="carousel-item" data-slide-number="2">
+                            <img 
+                              src="https://images.unsplash.com/photo-1516069677018-378515003435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1529&q=80" 
+                              class="d-block w-100" 
+                              alt="..." 
+                              data-remote="https://images.unsplash.com/photo-1516069677018-378515003435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1529&q=80" 
+                              data-type="image" 
+                              data-toggle="lightbox" 
+                              data-gallery="example-gallery"
+                              >
+                          </div>
+                          <div class="carousel-item" data-slide-number="3">
+                            <img 
+                            src="https://images.unsplash.com/photo-1564725075388-cc8338732289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                            class="d-block w-100" 
+                            alt="..." 
+                            data-remote="https://images.unsplash.com/photo-1564725075388-cc8338732289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                            data-type="image" 
+                            data-toggle="lightbox" 
+                            data-gallery="example-gallery"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Carousel Navigation -->
+                      <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row mx-0">
+                              <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                <img 
+                                  src="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" 
+                                  class="img-fluid" 
+                                  alt="..."
+                                  >
+                              </div>
+                              <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                <img 
+                                  src="https://images.unsplash.com/photo-1601642910940-ae43dc8cf421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" 
+                                  class="img-fluid" 
+                                  alt="..."
+                                  >
+                              </div>
+                              <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                <img 
+                                  src="https://images.unsplash.com/photo-1516069677018-378515003435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1529&q=80" 
+                                  class="img-fluid" 
+                                  alt="..."
+                                  >
+                              </div>
+                              <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                <img 
+                                  src="https://images.unsplash.com/photo-1564725075388-cc8338732289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                                  class="img-fluid" 
+                                  alt="..."
+                                  >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row mx-0">
+                              <!-- <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                <img src="https://source.unsplash.com/uanoYn1AmPs/600x400/" class="img-fluid" alt="...">
+                              </div>
+                              <div id="carousel-selector-7" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="7">
+                                <img src="https://source.unsplash.com/_snqARKTgoc/600x400/" class="img-fluid" alt="...">
+                              </div>
+                              <div id="carousel-selector-8" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="8">
+                                <img src="https://source.unsplash.com/M9F8VR0jEPM/600x400/" class="img-fluid" alt="...">
+                              </div>
+                              <div id="carousel-selector-9" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="9">
+                                <img src="https://source.unsplash.com/Q1p7bh3SHj8/600x400/" class="img-fluid" alt="...">
+                              </div> -->
+                              <div class="col-2 px-1 py-2"></div>
+                              <div class="col-2 px-1 py-2"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      </div> <!-- /row -->
+                      </div> <!-- /container -->
+                    <!--  -->
                  </div>
                 </div>
               </div>
