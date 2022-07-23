@@ -5,6 +5,10 @@
   color: #606060;
 }
 
+.hidden{
+  display: none;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -16,6 +20,49 @@
   padding-bottom: 4rem;
   width: 100vw;
   max-width: 72rem;
+}
+
+.selection-box {
+  padding: 3.5rem 2.5rem !important;
+}
+.selection-box h2 {
+  text-align: center;
+  margin-bottom: 3.5rem;
+}
+.selection-box .options-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+.selection-box .options-container .box-option {
+  padding: 2.5rem;
+  border: 1px solid #dcdcdc;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  margin: 0 10px;
+  transition: all 0.15s ease;
+  max-width: 20rem;
+  text-align: center;
+}
+.selection-box .options-container .box-option:hover {
+  transform: scale(1.05);
+  border-color: #00a461;
+  color: #00a461;
+}
+.selection-box .options-container .box-option i, .selection-box .options-container .box-option svg {
+  font-size: 6.5rem;
+  display: block;
+  margin-bottom: 0.1 0.25rem;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
+.selection-box .options-container .box-option span {
+  font-size: 24pt;
+  font-weight: bold;
+  text-align: center;
+  display: block;
+  margin-bottom: 1.5rem;
 }
 
 /*------------------------*/
