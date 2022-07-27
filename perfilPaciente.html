@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/perfilPaciente.css">
+</head>
+<body>
+    <div class="container">
+        <div class="perfil-box">
+            <div class="toggleable-box edit-clients-box">
+                <div class="toggleable-content">
+                  <div class="toggleable-item active-item" data-target="#datos-generales-box">Datos generales</div>
+                  <div class="toggleable-item" data-target="#antecedentes-list">Antecedentes</div>
+                  <div class="toggleable-item" data-target="#actualmente-list">Actualmente</div>
+                  <div class="toggleable-item" data-target="#documentos-box ">Documentos Subidos</div>
+                  <div class="toggleable-item" data-target="#MyCodigoBox ">Mi código QR</div>
+                </div>
+                <div class="box">
+                  <!-- Datos Generales -->
+                  <div class="box-option active-option" id="datos-generales-box">
+                    <div class="general-box mb-3">
+                        <img src="https://images.unsplash.com/photo-1529123202249-4f6224196c9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
+                        <!-- General -->
+                        <div class="general-info">
+                          <h4 class="text-main mb-4">General</h4>
+                          <div class="general-item">
+                            <label for="">Nombre</label>
+                            <span>Ana Elena Ramírez Ortíz</span>
+                          </div>
+                          <div class="general-item">
+                            <label for="">Fecha de nacimiento</label>
+                            <span>10/10/1880</span>
+                          </div>
+                          <div class="general-item">
+                            <label for="">Representante legal</label>
+                            <span>Mattew Williams</span>
+                          </div>
+                          <div class="general-item">
+                            <label for="">Dirección</label>
+                            <span>12 Wall Street, Syracuse,ny, 13204  United States</span>
+                          </div>
+                          <div class="general-item">
+                            <label for="">Teléfono</label>
+                            <span>55 53 32 53 63</span>
+                          </div>
+                          <div class="general-item">
+                            <label for="">Email</label>
+                            <span>IamAnn@gmail.com</span>
+                          </div>
+                          <div class="general-item">
+                            <label for="">RCF</label>
+                            <span>ODJAS8DSAAH020HFS8</span>
+                          </div>
+                          <div class="general-item">
+                            <label for="">Médico tratante</label>
+                            <span>Ricardo Cruz</span>
+                          </div>
+                        </div>
+                    </div>
+                    <h4 class="text-main">Sobre mí</h4>
+                    <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quos, ipsum deserunt quia debitis aliquid repellat excepturi molestias. Quibusdam, magnam. Earum facere neque sapiente hic consectetur numquam unde nihil dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, animi.</p>
+<!--                     <h4 class="text-main">Mi código QR</h4>
+                    <div class="qr-box">
+                        <div class="box-text text-center mb-3"> 
+                            <h5>Código QR Escaneable</h5>
+                            <small>Este código te identifica como paciente.Compartelo con tu médico</small>
+                        </div>
+                        <button class="custom-border mb-5`">
+                            <span>
+                                <img class="qr-cont" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="">
+                            </span>
+                        </button>
+                        <button class="btn btn-main rounded-full py-2 flex align-items-center w-100">
+                            <i class="fa-solid fa-copy "></i>
+                            <span >Copiar código</span>
+                        </button>
+                    </div> -->
+                  </div>
+                  <!-- Historial Familiar -->
+                  <div class="box-option" id="antecedentes-list">
+                    <div class="list-content">
+                      <a href="#listone" data-toggle="" aria-expanded="false" aria-controls="listone">Historial familiar<i class="fa fa-chevron-down"></i></a>
+                      <div class="p-3" id="listone">
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Diabetes</span>
+                            -
+                            <span>12/12/2020</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="list-content">
+                      <a href="#listwo" data-toggle="" aria-expanded="false" aria-controls="listwo">Enfermedades pre-existentes<i class="fa fa-chevron-down"></i></a>
+                      <div class="p-3" id="listwo">
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Diabetes</span>
+                            -
+                            <span>12/12/2020</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="list-content">
+                      <a href="#listthree" data-toggle="" aria-expanded="false" aria-controls="listthree">Cirugias pre-existentes<i class="fa fa-chevron-down"></i></a>
+                      <div class="p-3" id="listthree">
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Cirugía en pancreas</span>
+                            -
+                            <span>09/03/2020</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Cirugía en vesicula</span>
+                            -
+                            <span>04/11/2021</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Actualmente -->
+                  <div class="box-option" id="actualmente-list">
+                    <div class="list-content">
+                      <a href="#listfour" data-toggle="" aria-expanded="false" aria-controls="listfour">Enfermedades crónicas actuales<i class="fa fa-chevron-down"></i></a>
+                      <div class="p-3" id="listfour">
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Diabetes</span>
+                            -
+                            <span>09/03/2021</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Hipertensión</span>
+                            -
+                            <span>04/11/2020</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                      </div>
+                    </div>
+                    <div class="list-content">
+                      <a href="#listfive" data-toggle="" aria-expanded="false" aria-controls="listfive">Medicamentos tomados actualmente<i class="fa fa-chevron-down"></i></a>
+                      <div class="p-3" id="listfive">
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Metformina.</span>
+                            -
+                            <span>09/03/2021</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                        <h6>
+                          <h6 class="flex">
+                            <span class="mr-2">Píldoras liberadoras de insulina.</span>
+                            -
+                            <span>04/11/2020</span>
+                          </h6>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi fuga non in quia. Error odio perferendis ipsum eveniet illum nostrum, quia culpa rem, necessitatibus, natus libero veniam perspiciatis maiores officiis!</p>
+                        </h6>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Documentos -->
+                  <div class="box-option" id="documentos-box">
+                    <!-- Custom Carousel -->
+                    <div class="container mt-4 ">
+                      <div class="carousel-container position-relative row">
+                      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active" data-slide-number="0">
+                            <img 
+                              src="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" 
+                              class="d-block w-100"   
+                              alt="..." 
+                              data-remote="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" 
+                              data-type="image" 
+                              data-toggle="lightbox" 
+                              data-gallery="example-gallery"
+                            >
+                          </div>
+                          <div class="carousel-item" data-slide-number="1">
+                            <img 
+                              src="https://images.unsplash.com/photo-1601642910940-ae43dc8cf421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" 
+                              class="d-block w-100" 
+                              alt="..." 
+                              data-remote="https://images.unsplash.com/photo-1601642910940-ae43dc8cf421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" 
+                              data-type="image" 
+                              data-toggle="lightbox" 
+                              data-gallery="example-gallery"
+                              >
+                          </div>
+                          <div class="carousel-item" data-slide-number="2">
+                            <img 
+                              src="https://images.unsplash.com/photo-1516069677018-378515003435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1529&q=80" 
+                              class="d-block w-100" 
+                              alt="..." 
+                              data-remote="https://images.unsplash.com/photo-1516069677018-378515003435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1529&q=80" 
+                              data-type="image" 
+                              data-toggle="lightbox" 
+                              data-gallery="example-gallery"
+                              >
+                          </div>
+                          <div class="carousel-item" data-slide-number="3">
+                            <img 
+                            src="https://images.unsplash.com/photo-1564725075388-cc8338732289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                            class="d-block w-100" 
+                            alt="..." 
+                            data-remote="https://images.unsplash.com/photo-1564725075388-cc8338732289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                            data-type="image" 
+                            data-toggle="lightbox" 
+                            data-gallery="example-gallery"
+                            >
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Carousel Navigation -->
+                      <div id="carousel-thumbs" class="carousel slide" data-ride="carousel">
+                        <div class="carousel-inner">
+                          <div class="carousel-item active">
+                            <div class="row mx-0">
+                              <div id="carousel-selector-0" class="thumb col-4 col-sm-2 px-1 py-2 selected" data-target="#myCarousel" data-slide-to="0">
+                                <img 
+                                  src="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" 
+                                  class="img-fluid" 
+                                  alt="..."
+                                  >
+                              </div>
+                              <div id="carousel-selector-1" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="1">
+                                <img 
+                                  src="https://images.unsplash.com/photo-1601642910940-ae43dc8cf421?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=580&q=80" 
+                                  class="img-fluid" 
+                                  alt="..."
+                                  >
+                              </div>
+                              <div id="carousel-selector-2" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="2">
+                                <img 
+                                  src="https://images.unsplash.com/photo-1516069677018-378515003435?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1529&q=80" 
+                                  class="img-fluid" 
+                                  alt="..."
+                                  >
+                              </div>
+                              <div id="carousel-selector-3" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="3">
+                                <img 
+                                  src="https://images.unsplash.com/photo-1564725075388-cc8338732289?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1yZWxhdGVkfDZ8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60" 
+                                  class="img-fluid" 
+                                  alt="..."
+                                  >
+                              </div>
+                            </div>
+                          </div>
+                          <div class="carousel-item">
+                            <div class="row mx-0">
+                              <!-- <div id="carousel-selector-6" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="6">
+                                <img src="https://source.unsplash.com/uanoYn1AmPs/600x400/" class="img-fluid" alt="...">
+                              </div>
+                              <div id="carousel-selector-7" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="7">
+                                <img src="https://source.unsplash.com/_snqARKTgoc/600x400/" class="img-fluid" alt="...">
+                              </div>
+                              <div id="carousel-selector-8" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="8">
+                                <img src="https://source.unsplash.com/M9F8VR0jEPM/600x400/" class="img-fluid" alt="...">
+                              </div>
+                              <div id="carousel-selector-9" class="thumb col-4 col-sm-2 px-1 py-2" data-target="#myCarousel" data-slide-to="9">
+                                <img src="https://source.unsplash.com/Q1p7bh3SHj8/600x400/" class="img-fluid" alt="...">
+                              </div> -->
+                              <div class="col-2 px-1 py-2"></div>
+                              <div class="col-2 px-1 py-2"></div>
+                            </div>
+                          </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="sr-only">Next</span>
+                        </a>
+                      </div>
+                      </div> <!-- /row -->
+                      </div> <!-- /container -->
+        </div>
+        <div class="box-option" id="MyCodigoBox">
+            <div class="qr-box">
+                <div class="box-text text-center mb-3"> 
+                    <h5>Código QR Escaneable</h5>
+                    <!-- <small>Este código te identifica como paciente.Compartelo con tu médico</small> -->
+                    <small>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos nobis quidem reiciendis magni natus </small>
+                </div>
+                <button class="custom-border mb-5">
+                    <span>
+                        <img class="qr-cont" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d0/QR_code_for_mobile_English_Wikipedia.svg/1200px-QR_code_for_mobile_English_Wikipedia.svg.png" alt="">
+                    </span>
+                </button>
+                <button class="btn btn-main rounded-full py-2 flex align-items-center w-100">
+                    <i class="fa-solid fa-copy "></i>
+                    <span >Copiar código</span>
+                </button>
+            </div>
+            
+        </div>
+    </div>
+<!--     <div class="container-fluid">
+        <div class="box perfil-box">
+          <div class="general-box mb-3">
+            <img src="https://images.unsplash.com/photo-1529123202249-4f6224196c9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
+            <div class="general-info">
+              <h4 class="text-main mb-4">Ana Ramírez</h4>
+              <div class="general-item">
+                <label for="">Nombre</label>
+                <span>Ana Elena Ramírez Ortíz</span>
+              </div>
+              <div class="general-item">
+                <label for="">Fecha de nacimiento</label>
+                <span>10/10/1880</span>
+              </div>
+              <div class="general-item">
+                <label for="">Representante legal</label>
+                <span>Mattew Williams</span>
+              </div>
+              <div class="general-item">
+                <label for="">Dirección</label>
+                <span>12 Wall Street, Syracuse,ny, 13204  United States</span>
+              </div>
+              <div class="general-item">
+                <label for="">Teléfono</label>
+                <span>55 53 32 53 63</span>
+              </div>
+              <div class="general-item">
+                <label for="">Email</label>
+                <span>IamAnn@gmail.com</span>
+              </div>
+              <div class="general-item">
+                <label for="">RCF</label>
+                <span>ODJAS8DSAAH020HFS8</span>
+              </div>
+              <div class="general-item">
+                <label for="">Médico tratante</label>
+                <span>Ricardo Cruz</span>
+              </div>
+            </div>
+          </div>
+          
+             </div>
+            </div>
+          </div>
+        </div>
+    </div> -->
+    <script src="./js/jquery/script.js"></script>
+    <script src="./js/paciente.js"></script>
+</body>
+</html>

@@ -19,6 +19,10 @@ body {
   color: #00a461;
 }
 
+.rounded-full {
+  border-radius: 9999px;
+}
+
 a {
   color: #00a461 !important;
   transition: all 0.3s ease-in-out;
@@ -33,7 +37,7 @@ a:hover {
 .box {
   background: #fff;
   border-radius: 0.5rem;
-  padding: 1rem;
+  padding: 1.5rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin-bottom: 1rem;
 }
@@ -498,7 +502,7 @@ a:hover {
   max-width: 70rem;
   margin: 0 auto;
   padding: 2.5rem;
-  margin-top: 70px;
+  margin-top: 30px;
 }
 .perfil-box .general-box {
   display: flex;
@@ -522,6 +526,95 @@ a:hover {
   max-height: 20rem;
   object-fit: cover;
   border-radius: 8px;
+}
+
+.qr-cont {
+  width: 280px;
+  height: auto;
+}
+
+.box-text {
+  background: #f5f5f5;
+  color: #606060;
+  border-radius: 0.75rem;
+  border: 1px solid #dcdcdc;
+  padding: 1rem;
+}
+
+.max-w-400 {
+  max-width: 400px;
+}
+
+.qr-box {
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  box-sizing: content-box;
+}
+
+.custom-border {
+  position: relative;
+  width: 80%;
+  aspect-ratio: 1;
+  margin: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: white;
+  padding: 0;
+  box-sizing: content-box;
+  border: 2px solid transparent;
+  transition: all 0.15s ease-in-out;
+}
+.custom-border span {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+.custom-border::before, .custom-border::after, .custom-border span::before, .custom-border span::after {
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.custom-border::before {
+  top: -4px;
+  left: -4px;
+  border-top: 4px solid #00a461;
+  border-left: 4px solid #00a461;
+}
+
+.custom-border::after {
+  top: -4px;
+  right: -4px;
+  border-top: 4px solid #00a461;
+  border-right: 4px solid #00a461;
+}
+
+.custom-border span::before {
+  bottom: -4px;
+  left: -4px;
+  border-bottom: 4px solid #00a461;
+  border-left: 4px solid #00a461;
+}
+
+.custom-border span::after {
+  bottom: -4px;
+  right: -4px;
+  border-bottom: 4px solid #00a461;
+  border-right: 4px solid #00a461;
+}
+
+.custom-border:hover {
+  transform: scale(1.05);
 }
 
 /*# sourceMappingURL=styles.css.map */
