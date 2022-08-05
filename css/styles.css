@@ -520,9 +520,17 @@ a:hover {
 .perfil-box .general-box .general-info {
   padding: 0 1.5rem;
   flex: 1;
+  /* .image-container{
+    position: relative;
+    height: 2rem !important;
+    input{
+      position:absolute;
+    }
+  } */
 }
 .perfil-box .general-box .general-info .general-item {
-  border-bottom: 1px solid #dcdcdc;
+  display: flex;
+  align-items: center;
   padding-bottom: 0.6rem;
   margin-bottom: 0.6rem;
   width: 100%;

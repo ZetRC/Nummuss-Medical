@@ -34,6 +34,10 @@ a{
     color: $main !important;
 }
 
+.hidden{
+    display: none;
+}
+
 //boxes
 
 .box{
@@ -93,3 +97,14 @@ a{
     border-radius: 0 .25rem .25rem 0;
 }
 
+.new-element-btn{
+    border:none;
+    text-align: left;
+    background: white;
+    &:hover{
+        color: #00a461;
+        i,svg{
+            color: #00a461;
+        }
+    }
+}

@@ -378,16 +378,3 @@ label{
 .document-input{
     margin-bottom:1.25rem;
 }
-
-
-.new-element-btn{
-    border:none;
-    text-align: left;
-    background: white;
-    &:hover{
-        color: #00a461;
-        i,svg{
-            color: #00a461;
-        }
-    }
-}

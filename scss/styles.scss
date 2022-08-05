@@ -561,10 +561,19 @@ a{
     display:flex;
     .general-info{
       padding:0 1.5rem;
-      
       flex: 1;
+
+      /* .image-container{
+        position: relative;
+        height: 2rem !important;
+        input{
+          position:absolute;
+        }
+      } */
       .general-item{
-        border-bottom:1px solid #dcdcdc;
+        //border-bottom:1px solid #dcdcdc;
+        display: flex;
+        align-items:center;
         padding-bottom: .6rem;
         margin-bottom:.6rem;
         width: 100%;

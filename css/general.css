@@ -30,6 +30,10 @@ a:hover {
   color: #00a461 !important;
 }
 
+.hidden {
+  display: none;
+}
+
 .box {
   background: #fff;
   border-radius: 0.5rem;
@@ -86,6 +90,18 @@ a:hover {
   background-color: #e9ecef;
   border-left: inherit;
   border-radius: 0 0.25rem 0.25rem 0;
+}
+
+.new-element-btn {
+  border: none;
+  text-align: left;
+  background: white;
+}
+.new-element-btn:hover {
+  color: #00a461;
+}
+.new-element-btn:hover i, .new-element-btn:hover svg {
+  color: #00a461;
 }
 
 /*# sourceMappingURL=general.css.map */
