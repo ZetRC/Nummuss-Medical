@@ -126,7 +126,7 @@ a:hover {
   display: block !important;
 }
 
-.form-group {
+.info-item {
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -134,10 +134,10 @@ a:hover {
   margin-bottom: 0.75rem;
   padding-bottom: 0.75rem;
 }
-.form-group label {
+.info-item label {
   min-width: 10rem;
 }
-.form-group input {
+.info-item input {
   flex: 1;
 }
 

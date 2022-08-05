@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/general.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"> -->
 </head>
 <body>
   <!-- navbar -->
@@ -32,6 +33,7 @@
         <label class=qrcode-text-btn>
             <input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1>
         </label>
+        <!-- <i class="fa-solid fa-magnifying-glass"></i> -->
         <input class="btn-main" type=button value="Buscar" data-bs-toggle="modal" data-bs-target="#modal-pacientes">
         <!-- <input class="btn-main" type=button value="Buscar" onclick="openURL();" > -->
       </div>
@@ -211,42 +213,42 @@
                       <div class="col-12 col-md-8 client-info-box">
                         <div class="form mb-4">
                           <h4 class="text-main mb-4">General</h4>
-                          <div class="form-group">
+                          <div class="info-item">
                             <label for="">Nombre</label>
                             <div>Ann with an  e</div>
                             <!-- <input type="text" class="form-control" value="Ann with an e"> -->
                           </div>
-                          <div class="form-group">
+                          <div class="info-item">
                             <label for="">F. de nacimiento</label>
                             <!-- <input type="text" class="form-control" value="10/10/1880"> -->
                             <div>10/10/1880</div>
                           </div>
-                          <div class="form-group">
+                          <div class="info-item">
                             <label for="">Representante legal</label>
                             <!-- <input type="text" class="form-control" value="Mattew Williams"> -->
                             <div>Mattew Williams</div>
                           </div>
-                          <div class="form-group">
+                          <div class="info-item">
                             <label for="">Dirección</label>
                             <!-- <input type="text" class="form-control" value="12 Wall Street, Syracuse,ny, 13204  United States"> -->
                             <div>12 Wall Street, Syracuse,ny, 13204  United States</div>
                           </div>
-                          <div class="form-group">
+                          <div class="info-item">
                             <label for="">Teléfono</label>
                             <!-- <input type="text" class="form-control" value="55 53 32 53 63"> -->
                             <div>55 53 32 53 63</div>
                           </div>
-                          <div class="form-group">
+                          <div class="info-item">
                             <label for="">Email</label>
                             <!-- <input type="text" class="form-control" value="IamAnn@gmail.com"> -->
                             <div>IamAnn@gmail.com</div>
                           </div>
-                          <div class="form-group">
+                          <div class="info-item">
                             <label for="">RFC</label>
                             <!-- <input type="text" class="form-control" value="ODJAS8DSAAH020HFS8"> -->
                             <div>ODJAS8DSAAH020HFS8</div>
                           </div>
-                          <div class="form-group">
+                          <div class="info-item">
                             <label for="">Médico tratante</label>
                             <!-- <input type="text" class="form-control" value="Ricardo Cruz"> -->
                             <a href="">
@@ -482,6 +484,7 @@
                  <div class="box-option" id="receta-box">
                   <div class="my-3"></div>
                   <div class="form-group border-0">
+                    <div class="mb-2">Receta</div>
                     <div class="custom-file">
                       <input type="file" class="custom-file-input" id="customFile">
                       <label class="custom-file-label" for="customFile">seleccionar archivo</label>
