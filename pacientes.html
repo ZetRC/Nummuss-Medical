@@ -7,63 +7,31 @@
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="./css/styles.css">
-    
+    <link rel="stylesheet" href="./css/general.css">
 </head>
 <body>
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="./pacientes.html">Navbar</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-        <form class="d-flex ">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="./pacientes.html">Pacientes</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./perfil.html">Perfil</a>
-            </li>
-            <!-- <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-            </li> -->
-          </ul>
-          <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
-        </form>
-        <div class="profile-content">
-            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80" alt="">
-            <h6>John Doe</h6>
-        </div>
+        <a class="profile-content" href="./perfil.html">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
+            <h6>Ricardo Cruz</h6>
+        </a>
       </div>
     </div>
   </nav>
   <!-- pacientes -->
   <section class="container my-5 d-flex">
-    <!-- <div class="d-flex justify-content-between mb-3">
-      <h2>Pacientes:</h2>
-      <div class="d-flex">
-        <button class="btn btn-light mx-1">Filtro 1</button>
-        <button class="btn btn-light mx-1">Filtro 2</button>
-      </div>
-    </div>
-    <div class="row"> -->
-      <!--  -->
       <div class="search-container">
-        <input type=text size=16 placeholder="Tracking Code" id="mycode" class=qrcode-text><label class=qrcode-text-btn><input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1></label>
+        <input type=text size=16 placeholder="Búsqueda por código QR" id="mycode" class=qrcode-text>
+        <label class=qrcode-text-btn>
+            <input type=file accept="image/*" capture=environment onclick="return showQRIntro();" onchange="openQRCamera(this);" tabindex=-1>
+        </label>
         <input class="btn-main" type=button value="Buscar" data-bs-toggle="modal" data-bs-target="#modal-pacientes">
         <!-- <input class="btn-main" type=button value="Buscar" onclick="openURL();" > -->
       </div>
@@ -215,7 +183,7 @@
 </footer>
   <!-- Modal informacion del paciente -->
   <div class="modal fade" id="modal-pacientes" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered modal-xl">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title" id="exampleModalLabel">Información del paciente</h5>
@@ -228,57 +196,71 @@
                   <div class="toggleable-item" data-target="#antecedentes-list">Antecedentes</div>
                   <div class="toggleable-item" data-target="#actualmente-list">Actualmente</div>
                   <div class="toggleable-item" data-target="#documentos-box ">Documentos Subidos</div>
+                  <div class="toggleable-item" data-target="#receta-box">Ingresa una receta</div>
                 </div>
                 <div class="box">
                   <!-- Datos Generales -->
                   <div class="box-option active-option" id="datos-generales-box">
-                    <div class="row flex align-items-center">
+                    <div class="row flex align-items-start">
                       <div class="col-12 col-md-4">
                       <div class="img-cont">
-                          <input type="file">
+                          <!-- <input type="file"> -->
                           <img src="https://images.unsplash.com/photo-1529123202249-4f6224196c9b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=464&q=80" alt="">
                         </div>
                       </div>
                       <div class="col-12 col-md-8 client-info-box">
-                        <div class="form">
+                        <div class="form mb-4">
+                          <h4 class="text-main mb-4">General</h4>
                           <div class="form-group">
                             <label for="">Nombre</label>
-                            <input type="text" class="form-control" value="Ann with an e">
+                            <div>Ann with an  e</div>
+                            <!-- <input type="text" class="form-control" value="Ann with an e"> -->
                           </div>
                           <div class="form-group">
                             <label for="">F. de nacimiento</label>
-                            <input type="text" class="form-control" value="10/10/1880">
+                            <!-- <input type="text" class="form-control" value="10/10/1880"> -->
+                            <div>10/10/1880</div>
                           </div>
                           <div class="form-group">
                             <label for="">Representante legal</label>
-                            <input type="text" class="form-control" value="Mattew Williams">
+                            <!-- <input type="text" class="form-control" value="Mattew Williams"> -->
+                            <div>Mattew Williams</div>
                           </div>
                           <div class="form-group">
                             <label for="">Dirección</label>
-                            <input type="text" class="form-control" value="12 Wall Street, Syracuse,ny, 13204  United States">
+                            <!-- <input type="text" class="form-control" value="12 Wall Street, Syracuse,ny, 13204  United States"> -->
+                            <div>12 Wall Street, Syracuse,ny, 13204  United States</div>
                           </div>
                           <div class="form-group">
                             <label for="">Teléfono</label>
-                            <input type="text" class="form-control" value="55 53 32 53 63">
+                            <!-- <input type="text" class="form-control" value="55 53 32 53 63"> -->
+                            <div>55 53 32 53 63</div>
                           </div>
                           <div class="form-group">
                             <label for="">Email</label>
-                            <input type="text" class="form-control" value="IamAnn@gmail.com">
+                            <!-- <input type="text" class="form-control" value="IamAnn@gmail.com"> -->
+                            <div>IamAnn@gmail.com</div>
                           </div>
                           <div class="form-group">
                             <label for="">RFC</label>
-                            <input type="text" class="form-control" value="ODJAS8DSAAH020HFS8">
+                            <!-- <input type="text" class="form-control" value="ODJAS8DSAAH020HFS8"> -->
+                            <div>ODJAS8DSAAH020HFS8</div>
                           </div>
                           <div class="form-group">
                             <label for="">Médico tratante</label>
-                            <input type="text" class="form-control" value="Ricardo Cruz">
+                            <!-- <input type="text" class="form-control" value="Ricardo Cruz"> -->
+                            <a href="">
+                              <div>Ricardo Cruz</div>
+                            </a>
                           </div>
                         </div>
+                        <h4 class="text-main">Sobre mí</h4>
+                        <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil quos, ipsum deserunt quia debitis aliquid repellat excepturi molestias. Quibusdam, magnam. Earum facere neque sapiente hic consectetur numquam unde nihil dolore. Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, animi.</p>
                     </div>
-                    <div class="btn-cont">
+                    <!-- <div class="btn-cont">
                       <button class="btn btn-main">Guardar</button>
                       <button class="btn btn-light border">Limpiar</button>
-                    </div>
+                    </div> -->
                     </div>
                   </div>
                   <!-- Historial Familiar -->
@@ -386,6 +368,7 @@
                           <div class="carousel-item active" data-slide-number="0">
                             <img 
                               src="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" 
+                              data-zoom-image="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80"
                               class="d-block w-100"   
                               alt="..." 
                               data-remote="https://images.unsplash.com/photo-1616012480717-fd9867059ca0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=725&q=80" 
@@ -485,16 +468,30 @@
                         </div>
                         <a class="carousel-control-prev" href="#carousel-thumbs" role="button" data-slide="prev">
                           <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Previous</span>
+                          <!-- <span class="sr-only">Previous</span> -->
                         </a>
                         <a class="carousel-control-next" href="#carousel-thumbs" role="button" data-slide="next">
                           <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                          <span class="sr-only">Next</span>
+                          <!-- <span class="sr-only">Next</span> -->
                         </a>
                       </div>
                       </div> <!-- /row -->
                       </div> <!-- /container -->
                     <!--  -->
+                 </div>
+                 <div class="box-option" id="receta-box">
+                  <div class="my-3"></div>
+                  <div class="form-group border-0">
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="customFile">
+                      <label class="custom-file-label" for="customFile">seleccionar archivo</label>
+                      <small class="text-success cursor-pointer ml-3 mt-2 d-block cursor-pointer">Ver archivo</small>
+                    </div>
+                  </div>
+                  <div class="btn-cont mt-5">
+                      <button class="btn btn-main">Guardar</button>
+                      <button class="btn btn-light border">Limpiar</button>
+                  </div>
                  </div>
                 </div>
               </div>
@@ -504,6 +501,7 @@
     </div>
   </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://www.elevateweb.co.uk/wp-content/themes/radial/jquery.elevatezoom.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
     <script src="./js/script.js"></script>

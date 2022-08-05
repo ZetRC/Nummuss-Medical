@@ -3,6 +3,7 @@ var homeLayout = (function() {
 	var initProperties = function() {
          functions.toggleableTables();
          functions.initCustomCarousel();
+         functions.handleImageZoom();
 	};
 	
 	var functions = {	
@@ -56,7 +57,7 @@ var homeLayout = (function() {
                 $('[id=carousel-selector-'+id+']').addClass('selected');
               });
               // when user swipes, go next or previous
-              $('#myCarousel').swipe({
+/*               $('#myCarousel').swipe({
                 fallbackToMouseEvents: true,
                 swipeLeft: function(e) {
                   $('#myCarousel').carousel('next');
@@ -67,7 +68,7 @@ var homeLayout = (function() {
                 allowPageScroll: 'vertical',
                 preventDefaultEvents: false,
                 threshold: 75
-              });
+              }); */
               /*
               $(document).on('click', '[data-toggle="lightbox"]', function(event) {
                 event.preventDefault();
@@ -79,6 +80,16 @@ var homeLayout = (function() {
                 var src = $(e.target).attr('data-remote');
                 if (src) $(this).ekkoLightbox();
               });
+        },
+        handleImageZoom : function(){
+          //initiate the plugin and pass the id of the div containing gallery images
+          $(".zoom-image").elevateZoom({
+            cursor: 'pointer',
+            easing : true,
+            galleryActiveClass: 'active',
+            imageCrossfade: true,
+            loadingIcon: 'https://www.elevateweb.co.uk/spinner.gif'
+          });
         }
 	};
 	

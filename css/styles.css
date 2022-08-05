@@ -1,3 +1,8 @@
+.carousel-control-prev,
+.carousel-control-next {
+  background: #000;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -124,8 +129,10 @@ a:hover {
 .form-group {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 1rem 0;
+  justify-content: flex-start;
+  border-bottom: 1px solid #dcdcdc;
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
 }
 .form-group label {
   min-width: 10rem;
@@ -433,13 +440,16 @@ a:hover {
   display: flex;
   flex: 1;
   margin-top: 50px;
+  border-radius: 10rem;
+  overflow: hidden;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .qrcode-text {
   padding-right: 1.7em;
   margin-right: 0;
   border: 1px solid #dcdcdc;
-  padding: 0.5rem;
+  padding: 0.75rem;
   flex: 1;
 }
 
