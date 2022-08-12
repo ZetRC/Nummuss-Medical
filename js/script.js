@@ -6,6 +6,7 @@ var homeLayout = (function() {
          functions.handleImageZoom();
          functions.handleSidebar();
          functions.dropdown();
+         functions.handleDinamicTables();
 	};
 	
 	var functions = {	
@@ -125,6 +126,15 @@ var homeLayout = (function() {
             }
           })
         },
+        handleDinamicTables : function(){
+          //$('#datatable').DataTable();
+          /* $('.custom-table').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+             'csv', 'excel', 'pdf'
+            ]
+          }); */
+        }
 	};
 	
 	var initialize = function() {

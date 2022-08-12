@@ -10,9 +10,39 @@ body {
   box-sizing: border-box;
 }
 
+.bold {
+  font-weight: bold !important;
+}
+
+.icon-hover {
+  transition: all 0.3s ease;
+}
+.icon-hover:hover {
+  color: #00a461;
+}
+
+.btn-main,
+.btn-gray {
+  font-size: 13px;
+  padding: 8px 24px;
+  border: none;
+  border-radius: 4px;
+  margin-top: 30px;
+}
+
 .btn-main {
   background: #00a461;
   color: white !important;
+}
+
+.btn-gray {
+  color: #606060;
+  background: #f0f0f0;
+}
+
+.btn-container {
+  display: inline-block;
+  float: right;
 }
 
 a {
@@ -102,6 +132,32 @@ a:hover {
 }
 .new-element-btn:hover i, .new-element-btn:hover svg {
   color: #00a461;
+}
+
+.custom-table {
+  width: 100%;
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.custom-table th,
+.custom-table td {
+  padding: 0.75rem 1.25rem;
+}
+.custom-table th {
+  color: white !important;
+  background-color: #00a461 !important;
+}
+.custom-table td {
+  border-bottom: 1px solid #ededed;
+}
+.custom-table tr:nth-child(odd) td {
+  background: #f5f5f5 !important;
+}
+
+.form-check-input:checked {
+  border-color: #00a461 !important;
+  background-color: #00a461 !important;
 }
 
 /*# sourceMappingURL=general.css.map */
