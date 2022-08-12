@@ -68,6 +68,56 @@
     }
 }
 
+//box subida de archivos
+.subir-archivos-box{
+    border-radius:8px;
+
+    th{
+        padding-left: 1.5rem;
+        margin-bottom:.5rem;
+        border-bottom: 5px solid white;
+    }
+    
+
+    .archivo-item{
+        background:#f5f5f5;
+        padding:1rem 1.5rem;
+        width: 100%;
+        border-radius: .5rem;
+        border-bottom: 10px solid white;
+        
+        tr,td{
+            padding:.75rem 1.25rem;
+        }
+        
+        .archivo-info {
+            i,
+            svg{
+                font-size: 1.25rem;
+                margin-right: 1.25rem;
+                color: #00a461;
+            }
+            span{
+                margin-right: 1.25rem;
+            }
+        }
+        .archivo-buttons{
+            i,
+            svg{
+                margin-left:10px;
+                transition:all .15s ease;
+            }
+            .fa-trash:hover{
+                color: #d16969;
+            }
+            .fa-eye:hover{
+                color: #00a461;
+            }
+        }
+    }
+
+}
+
 //steps wizard
 
 /*------------------------*/
