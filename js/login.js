@@ -3,6 +3,7 @@ var login = (function() {
 	var initProperties = function() {
          functions.handleWizard();
          functions.handleFade();
+         functions.togglePassword();
 	};
 	
 	var functions = {	
@@ -65,6 +66,13 @@ var login = (function() {
                 $(".selection-box").delay(200).fadeIn(200)
                 $('#formularioDoctor').fadeOut(200)
                 $('#formularioPaciente').fadeOut(200)
+                
+            })
+        },
+        togglePassword : function(){
+            $('.fa-eye, .fa-eye-slash').click(function(){
+                $('.fa-eye').toggleClass('hidden')
+                $('.fa-eye-slash').toggleClass('hidden')
                 
             })
         }

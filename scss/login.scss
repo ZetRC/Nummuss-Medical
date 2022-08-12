@@ -5,6 +5,13 @@
     color: #606060;
 }
 
+.logo{
+    position:absolute;
+    top:10px;
+    left:10px;
+    width: 6rem;
+}
+
 //Login
 
 .container{
@@ -17,6 +24,17 @@
         padding-bottom:4rem;
         width:100vw;
         max-width:72rem;
+
+        .input-container{
+            position: relative;
+            i,
+            svg{
+                position: absolute;
+                top:50%;
+                transform: translateY(-50%);
+                right: 1rem;
+            }
+        }
     }
   }
 

@@ -5,6 +5,13 @@
   color: #606060;
 }
 
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 6rem;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -16,6 +23,16 @@
   padding-bottom: 4rem;
   width: 100vw;
   max-width: 72rem;
+}
+.container .box .input-container {
+  position: relative;
+}
+.container .box .input-container i,
+.container .box .input-container svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 1rem;
 }
 
 .selection-box {
