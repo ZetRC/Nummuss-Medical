@@ -4,6 +4,7 @@ body {
   box-sizing: border-box;
   background: #e5e9eb;
   color: #606060;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 * {

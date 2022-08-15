@@ -87,6 +87,15 @@ a{
     }
   }
 
+  .subelement{
+    font-size: .85rem;
+    padding:5px;
+    i,
+    svg{
+      display: none;
+    }
+  }
+
   @mixin sidebar-children{
     align-items:center;
     padding: 1rem 1.5rem;

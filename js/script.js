@@ -127,7 +127,7 @@ var homeLayout = (function() {
           })
         },
         handleDinamicTables : function(){
-          //$('#datatable').DataTable();
+          $('#datatable').DataTable();
           /* $('.custom-table').DataTable( {
             dom: 'Bfrtip',
             buttons: [
