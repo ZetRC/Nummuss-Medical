@@ -7,6 +7,7 @@ var homeLayout = (function() {
          functions.handleSidebar();
          functions.dropdown();
          functions.handleDinamicTables();
+         functions.handleComboBox();
 	};
 	
 	var functions = {	
@@ -103,6 +104,10 @@ var homeLayout = (function() {
             $(this).addClass("selected-item")
           })
 
+          $('#toggle-sidebar').click(function(){
+            $("#sidebar").animate({width:'toggle'},100);  
+          })
+
           $("#perfil-selector").click(function(){
             const target = $(this).attr('data-target')
             $('.body-section').removeClass('d-block').addClass('hidden')
@@ -127,13 +132,23 @@ var homeLayout = (function() {
           })
         },
         handleDinamicTables : function(){
+          //create datatables
           $('#datatable').DataTable();
+          //maneja estado activo de una columna
+          $(".custom-table svg, .custom-table i").click(function(){
+            $('.custom-table tr').removeClass('active-row')
+            $(this).closest('tr').addClass('active-row')
+          })
+
           /* $('.custom-table').DataTable( {
             dom: 'Bfrtip',
             buttons: [
              'csv', 'excel', 'pdf'
             ]
           }); */
+        },
+        handleComboBox : function(){
+          
         }
 	};
 	

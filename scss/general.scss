@@ -46,8 +46,11 @@ body{
 }
 
 .btn-container{
-    display:inline-block;
-    float:right;
+    display: flex;
+    justify-content: flex-end;
+    .btn{
+        margin-left: 5px;
+    }
 }
 
 a{
@@ -78,6 +81,8 @@ a{
   padding: 1rem;
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
   margin-bottom:1rem;
+  overflow: auto;
+  height: fit-content;
 }
 
 //custom file input
@@ -141,16 +146,34 @@ a{
     }
 }
 
+.scrolleable-textarea{
+    height: 8rem;
+    overflow: auto;
+    resize: none;
+}
+
 //tables
+
+#body-sections section{
+    max-width: 1920px !important;
+    padding: 1.5rem !important;
+}
+
+section .custom-table{
+    background: white;
+    border-radius: .5rem;
+    padding: 1rem;
+}
 
 .custom-table{
     width:100%;
     background:#fff;
     border-radius: .5rem;
     overflow: hidden;
+    padding: 10px 0 0 0  !important;
     th,
     td{
-        padding:.75rem 1.25rem;
+        padding:.75rem 1.25rem !important;
     }
 
     th{
@@ -166,6 +189,10 @@ a{
         td{
             background: #f5f5f5 !important;
         }
+    }
+
+    .active-row{
+        color:#00a461;
     }
 }
 
