@@ -8,6 +8,7 @@ var homeLayout = (function() {
          functions.dropdown();
          functions.handleDinamicTables();
          functions.handleComboBox();
+         functions.handleTimepicker();
 	};
 	
 	var functions = {	
@@ -135,9 +136,9 @@ var homeLayout = (function() {
           //create datatables
           $('#datatable').DataTable();
           //maneja estado activo de una columna
-          $(".custom-table svg, .custom-table i").click(function(){
-            $('.custom-table tr').removeClass('active-row')
-            $(this).closest('tr').addClass('active-row')
+          $(".custom-table tr").click(function(){
+            $(this).closest('.custom-table').find('.active-row').removeClass('active-row')
+            $(this).addClass('active-row')
           })
 
           /* $('.custom-table').DataTable( {
@@ -149,6 +150,22 @@ var homeLayout = (function() {
         },
         handleComboBox : function(){
           
+        },
+        handleTimepicker : function(){          
+          $('.timepicker').timepicker({
+            interval: 30,
+          });
+
+          $( ".datepicker" ).datepicker({
+              dateFormat: 'yy-mm-dd',
+              minDate: 0,
+          });
+
+          $( "#datepicker" ).datepicker( $.datepicker.regional[ "es" ] );
+    $( "#locale" ).on( "change", function() {
+      $( "#datepicker" ).datepicker( "option",
+        $.datepicker.regional[ $( this ).val() ] );
+    });
         }
 	};
 	

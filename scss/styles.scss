@@ -24,6 +24,18 @@ body{
     color: white;
 }
 
+.large-btn{
+  font-size: 1rem !important;
+  min-width: 8rem !important;
+  //font-weight: 600 !important;
+  padding: 12px 24px !important;
+  box-shadow: rgb(0 0 0 / 15%) 0px 5px 15px 0px !important;
+}
+
+.rounded-btn{
+  border-radius: 999px !important;
+}
+
 .text-main{
   color: #00a461;
 }
@@ -765,3 +777,6 @@ background-color:#ea4c89
 .custom-border:hover {
   transform: scale(1.05);
 }
+
+@import './Componentes/switch';
+@import './Componentes//timePicker';
