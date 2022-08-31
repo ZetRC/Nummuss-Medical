@@ -80,10 +80,10 @@ var homeLayout = (function() {
               });
               */
               
-              $('#myCarousel .carousel-item img').on('click', function(e) {
+              /* $('#myCarousel .carousel-item img').on('click', function(e) {
                 var src = $(e.target).attr('data-remote');
                 if (src) $(this).ekkoLightbox();
-              });
+              }); */
         },
         handleImageZoom : function(){
           $(".zoom-image").elevateZoom({
