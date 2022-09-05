@@ -60,30 +60,6 @@ var homeLayout = (function() {
                 $('[id^=carousel-selector-]').removeClass('selected');
                 $('[id=carousel-selector-'+id+']').addClass('selected');
               });
-              // when user swipes, go next or previous
-/*               $('#myCarousel').swipe({
-                fallbackToMouseEvents: true,
-                swipeLeft: function(e) {
-                  $('#myCarousel').carousel('next');
-                },
-                swipeRight: function(e) {
-                  $('#myCarousel').carousel('prev');
-                },
-                allowPageScroll: 'vertical',
-                preventDefaultEvents: false,
-                threshold: 75
-              }); */
-              /*
-              $(document).on('click', '[data-toggle="lightbox"]', function(event) {
-                event.preventDefault();
-                $(this).ekkoLightbox();
-              });
-              */
-              
-              /* $('#myCarousel .carousel-item img').on('click', function(e) {
-                var src = $(e.target).attr('data-remote');
-                if (src) $(this).ekkoLightbox();
-              }); */
         },
         handleImageZoom : function(){
           $(".zoom-image").elevateZoom({
@@ -134,7 +110,18 @@ var homeLayout = (function() {
         },
         handleDinamicTables : function(){
           //create datatables
-          $('#datatable').DataTable();
+          $('#datatable').DataTable( {
+            dom: 'Bfrtip',
+            buttons: [
+                {
+                    text: 'My button',
+                    action: function ( e, dt, node, config ) {
+                        alert( 'Botón activado' );
+                    }
+                }
+            ]
+          } );
+
           //maneja estado activo de una columna
           $(".custom-table tr").click(function(){
             $(this).closest('.custom-table').find('.active-row').removeClass('active-row')
