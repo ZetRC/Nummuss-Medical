@@ -1,0 +1,27 @@
+.custom-container{
+    width:100%;
+    max-width: 968px;
+    margin:0 auto;
+}
+
+.text-main{
+    color: #00a461;
+}
+
+.text-right{
+    text-align: right;
+}
+
+.border-main{
+    border:1px solid #00a461;
+}
+
+.text-bold{
+    font-weight: bold;
+}
+
+.text-sm{
+    font-size: .85rem;
+}
+
+/*# sourceMappingURL=receta.css.map */
