@@ -12,7 +12,23 @@
     width: 6rem;
 }
 
+.danger-icon:hover{
+  color: #d16969;    
+}
+
 //Login
+
+.flex-1{
+    flex: 1;
+}
+
+.w-fit{
+    width: fit-content;
+}
+
+.h-fit{
+    height: fit-content;
+}
 
 .container{
     display:flex;

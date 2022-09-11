@@ -127,16 +127,37 @@ var homeLayout = (function() {
             $(this).closest('.custom-table').find('.active-row').removeClass('active-row')
             $(this).addClass('active-row')
           })
-
-          /* $('.custom-table').DataTable( {
-            dom: 'Bfrtip',
-            buttons: [
-             'csv', 'excel', 'pdf'
-            ]
-          }); */
         },
         handleComboBox : function(){
-          
+            var combolist = [];
+            var combolist2 = [];
+            $(".combobox").each(function () {
+                $("input", this).focus(function () {
+                    $(this).parent().find("ul").slideDown(200);
+                });
+                //shows dropdown when element focuses
+
+                $("input", this).focusout(function () {
+                  setTimeout(()=>{
+                    $(this).parent().find("ul").slideUp(200);
+                  },200)
+                });
+                //hides element when out of focus
+                $("ul li", this).each(function () {
+                    $(this).click(function () {
+                        $(this).parent()
+                            .parent()
+                            .find("input")
+                        .val($(this).text())
+                        .css("background","#fff");
+                    }); //value of li is set as the text value
+                    combolist.push($(this).text());
+                    //pushes values of li to an array  
+                    combolist2.push($(this).text().toLowerCase());
+                    /*pushes values of li to an array in lowercase -
+                  added just in case the user does not want the values to be case sensetive  */
+                }); //each li
+            });
         },
         handleTimepicker : function(){          
           $('.timepicker').timepicker({
@@ -148,11 +169,12 @@ var homeLayout = (function() {
               minDate: 0,
           });
 
-          $( "#datepicker" ).datepicker( $.datepicker.regional[ "es" ] );
-    $( "#locale" ).on( "change", function() {
-      $( "#datepicker" ).datepicker( "option",
-        $.datepicker.regional[ $( this ).val() ] );
-    });
+          $("#datepicker").datePicker({
+            format: "yyyy",
+            viewMode: "years", 
+            minViewMode: "years",
+            autoclose:true
+         });   
         }
 	};
 	

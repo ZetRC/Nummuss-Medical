@@ -1,0 +1,24 @@
+.combobox{
+    position:relative;
+    margin-bottom:30px;
+    input{padding:5px;
+    width: 100%;
+    border-radius:5px;
+    border:1px solid #dcdcdc;
+    }
+    ul{
+    position:absolute;
+      background:#fff;
+      width:100%;
+      margin:0;
+      padding:0;
+      display:none;
+      border:1px solid #ccc;
+      z-index:2;
+        li{padding:3px 10px;
+      display:block;
+      cursor:pointer; 
+        border-bottom:1px solid #ccc;
+        p{font-size:12px} &:hover{color:white;background:#00a461}}
+    }
+  }
