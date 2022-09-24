@@ -73,6 +73,14 @@ a{
   min-height: 100vh;
   width: 12rem;
 
+  .sidebar-logo{
+    max-width:100%;
+    width:6rem;
+    display:block;
+    margin:0 auto;
+    margin-top: .25rem;
+  }
+
   .sidebar-element,
   .section-label{
     padding-left: 1.5rem !important;

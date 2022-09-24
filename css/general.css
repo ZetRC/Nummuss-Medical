@@ -22,6 +22,10 @@ body {
   color: #00a461;
 }
 
+.rounded-full {
+  border-radius: 9999px !important;
+}
+
 .btn-main,
 .btn-gray {
   font-size: 13px;
@@ -66,6 +70,14 @@ a:hover {
 
 .hidden {
   display: none;
+}
+
+.pb-24 {
+  padding-bottom: 6rem !important;
+}
+
+.text-lg {
+  font-size: 1.15rem !important;
 }
 
 .box {

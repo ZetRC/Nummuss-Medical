@@ -66,6 +66,13 @@ a:hover {
   min-height: 100vh;
   width: 12rem;
 }
+.sidebar .sidebar-logo {
+  max-width: 100%;
+  width: 6rem;
+  display: block;
+  margin: 0 auto;
+  margin-top: 0.25rem;
+}
 .sidebar .sidebar-element,
 .sidebar .section-label {
   padding-left: 1.5rem !important;

@@ -7,9 +7,9 @@
 
 .logo {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 6rem;
+  top: 1rem;
+  left: 1rem;
+  width: 7rem;
 }
 
 .danger-icon:hover {
@@ -52,11 +52,13 @@
 }
 
 .selection-box {
-  padding: 3.5rem 2.5rem !important;
+  padding: 3.5rem 2.5rem 6rem 2.5rem !important;
 }
 .selection-box h2 {
   text-align: center;
   margin-bottom: 3.5rem;
+  color: #00a461;
+  font-weight: bold;
 }
 .selection-box .options-container {
   display: flex;
@@ -71,7 +73,8 @@
   cursor: pointer;
   margin: 0 10px;
   transition: all 0.15s ease;
-  max-width: 20rem;
+  max-width: 50%;
+  width: 20rem;
   text-align: center;
 }
 .selection-box .options-container .box-option:hover {
@@ -85,6 +88,7 @@
   margin-bottom: 0.1 0.25rem;
   margin: 0 auto;
   margin-bottom: 1rem;
+  color: #bbcec6;
 }
 .selection-box .options-container .box-option span {
   font-size: 24pt;
@@ -92,6 +96,7 @@
   text-align: center;
   display: block;
   margin-bottom: 1.5rem;
+  color: #79af98;
 }
 
 .subir-archivos-box {
