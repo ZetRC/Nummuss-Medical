@@ -6,14 +6,21 @@
 }
 
 .logo {
-  position: absolute;
   top: 1rem;
   left: 1rem;
-  width: 7rem;
+  width: 6rem;
 }
 
 .danger-icon:hover {
   color: #d16969;
+}
+
+.w-min {
+  width: fit-content;
+}
+
+.text-main {
+  color: #28a745;
 }
 
 .flex-1 {
@@ -28,6 +35,10 @@
   height: fit-content;
 }
 
+.relative {
+  position: relative;
+}
+
 .container {
   display: flex;
   justify-content: center;
@@ -35,8 +46,7 @@
 .container .box {
   box-shadow: rgba(136, 165, 191, 0.48) 6px 2px 16px 0px, rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
   border: 1px solid #dcdcdc;
-  padding-top: 7rem;
-  padding-bottom: 4rem;
+  padding: 2rem 2rem 4rem 2rem;
   width: 100vw;
   max-width: 72rem;
 }
@@ -52,7 +62,7 @@
 }
 
 .selection-box {
-  padding: 3.5rem 2.5rem 6rem 2.5rem !important;
+  padding: 1.75rem 2.5rem 6rem 2.5rem !important;
 }
 .selection-box h2 {
   text-align: center;

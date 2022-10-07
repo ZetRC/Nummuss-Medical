@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="./css/login.css">
 </head>
 <body>
-    <img src="https://www.greenearthtx.com/wp-content/uploads/2020/12/company.com_logo.png" alt="" class="logo">
     <div class="container">
      <div class="signup-step-container">
         <!-- Box tipo de usuario -->
-        <div class="box selection-box">
+        <div class="box selection-box relative">
+            <img src="./assets/img/MedicalLogo3.webp" alt="" class="logo">
             <h2 class="text'justify">Yo soy un:</h2>
             <div class="options-container">
                 <div class="box-option toggle-content" id="doctor-selector" data-show="#formularioDoctor">
@@ -32,10 +32,11 @@
             </div>
         </div>
         <!-- Formulario para pacientes -->
-       <div class="box hidden" id="formularioPaciente">
+       <div class="box hidden relative" id="formularioPaciente">
+            <img src="./assets/img/MedicalLogo3.webp" alt="" class="logo">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-8">
-                    <div class="wizard">
+                    <div class="wizard mt-5">
                         <div class="wizard-inner">
                             <div class="connecting-line"></div>
                             <ul class="nav nav-tabs" role="tablist">
@@ -358,10 +359,11 @@
             </div>
         </div>
         <!-- Formulario para doctor -->
-        <div class="box hidden" id="formularioDoctor">
+        <div class="box hidden relative" id="formularioDoctor">
+            <img src="./assets/img/MedicalLogo3.webp" alt="" class="logo">
             <div class="row d-flex justify-content-center">
                 <div class="col-md-8">
-                    <div class="wizard doctor-wizard">
+                    <div class="wizard mt-5 doctor-wizard">
                         <div class="wizard-inner">
                             <div class="connecting-line" style="width: 67%;"></div>
                             <ul class="nav nav-tabs" role="tablist">
@@ -508,6 +510,11 @@
                 </div>
             </div>
         </div>
+        <small class="d-block m-auto w-fit">¿Ya tienes cuenta? <a href="" class="text-main">Inicia sesión</a></small>
+        <small class="d-block m-auto w-fit mt-2">© 2021 NumussMedical.com, inc. Reservados todos los derechos.
+            <a href="" class="text-main mx-2">Condiciones de uso</a>
+            <a href="" class="text-main mx-2">Politica de privacidad</a>
+        </small>
        </div> 
     </div>
     <script src="./js/jquery/script.js"></script>
