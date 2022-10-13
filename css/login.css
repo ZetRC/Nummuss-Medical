@@ -480,4 +480,512 @@ label {
   margin-bottom: 1.25rem;
 }
 
+:root {
+  --main-theme-color:#00a461;
+  --main-dark-grey:#586273;
+  --main-light-grey: #f5f7fa;
+  --main-theme-color-05:#f5f5f5;
+  --font-buttons: "Heebo", sans-serif;
+  --box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.2);
+}
+
+td.active.day,
+span.year.active {
+  background-color: #00a461 !important;
+  background: #00a461 !important;
+}
+
+.ui-menu .ui-menu-item {
+  box-sizing: border-box;
+  padding: 0 !important;
+}
+
+/*------------ DATE INPUT -------------*/
+.date_time {
+  background-color: white;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  border-radius: 0.15rem;
+  justify-content: flex-end;
+  box-sizing: border-box;
+  height: 36px;
+}
+
+.date_time span {
+  background-color: var(--main-light-grey);
+  color: #ddd;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #ddd;
+  align-items: center;
+  border-radius: 0 0.15rem 0.15rem 0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 0;
+  height: 36px;
+  border-right: none;
+}
+
+.date_time input {
+  height: 100%;
+  width: 150px;
+  box-sizing: border-box;
+  background-color: transparent;
+  z-index: 2;
+  letter-spacing: 3px;
+  text-align: center;
+  padding-right: 36px;
+}
+
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+  border-radius: 0.15rem;
+}
+
+.ui-datepicker {
+  margin-top: 5px;
+  padding: 0 !important;
+  box-shadow: var(--box-shadow);
+  border: none;
+}
+
+.ui-datepicker .ui-datepicker-header {
+  background: none !important;
+  border: 0;
+  background-color: var(--main-theme-color) !important;
+  color: white;
+  font-family: var(--font-buttons);
+  letter-spacing: 1px;
+  font-weight: 100;
+  border-radius: 0.15rem 0.15rem 0 0;
+}
+
+.ui-datepicker .ui-datepicker-prev-hover,
+.ui-datepicker .ui-datepicker-next-hover {
+  background-color: transparent !important;
+  border: none !important;
+  top: 2px !important;
+}
+
+.ui-datepicker a:hover {
+  text-decoration: none;
+}
+
+.ui-datepicker-prev, .ui-datepicker-next {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  cursor: pointer;
+  background-image: url("../images/icons_3/right_arrow_1.svg") !important;
+  background-repeat: no-repeat;
+  line-height: 600%;
+  overflow: hidden;
+}
+
+.ui-datepicker .ui-datepicker-prev span, .ui-datepicker .ui-datepicker-next span {
+  opacity: 0.4;
+}
+
+.ui-datepicker th {
+  font-weight: 100 !important;
+  font-family: var(--font-buttons);
+  font-size: 13px;
+  padding: 0.5em !important;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
+  border: none !important;
+  background: var(--main-theme-color-05) !important;
+  color: grey !important;
+  font-family: var(--font-buttons);
+  font-weight: 100 !important;
+  letter-spacing: 1px;
+}
+
+.ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
+  background-color: white !important;
+  color: var(--main-theme-color) !important;
+  font-weight: normal !important;
+}
+
+.ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active, .ui-button:active, .ui-button.ui-state-active:hover {
+  color: white !important;
+  background-color: var(--main-theme-color) !important;
+}
+
+.ui-datepicker td a.ui-state-hover.ui-state-default {
+  color: var(--main-theme-color) !important;
+  font-weight: normal !important;
+  background-color: white !important;
+}
+
+.ui-datepicker td a.ui-state-hover.ui-state-highlight {
+  background-color: white !important;
+  color: var(--main-theme-color) !important;
+  font-weight: normal !important;
+}
+
+.ui-datepicker table {
+  margin: 0.15em !important;
+  width: -webkit-fill-available !important;
+}
+
+/*------------ TIME INPUT ------------*/
+.ui-timepicker.ui-menu {
+  position: absolute !important;
+  top: 0 !important;
+}
+
+ul.ui-timepicker-viewport {
+  width: auto !important;
+}
+
+.ui-timepicker-standard {
+  margin-top: 5px !important;
+  box-sizing: border-box;
+  margin-left: 2px !important;
+  border-radius: 0.15rem;
+  box-shadow: var(--box-shadow);
+  border: none !important;
+  width: 149px !important;
+  padding: 0 !important;
+  z-index: 4 !important;
+}
+
+.ui-timepicker-standard a {
+  padding: 0.3em 0.4em !important;
+  text-decoration: none;
+  font-family: var(--font-buttons);
+  font-size: 13.5px;
+  letter-spacing: 1px;
+  color: grey !important;
+  font-weight: 100;
+}
+
+.ui-timepicker-standard a.ui-state-hover {
+  background: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: var(--main-theme-color-05) !important;
+  color: var(--main-theme-color) !important;
+}
+
+.ui-timepicker ::-webkit-scrollbar {
+  width: 8px;
+}
+
+.ui-timepicker ::-webkit-scrollbar-track {
+  background: rgba(17, 36, 45, 0.3);
+  background-color: var(--main-light-grey);
+}
+
+.ui-timepicker ::-webkit-scrollbar-thumb {
+  background: #ddd;
+}
+
+.ui-timepicker ::-webkit-scrollbar-thumb:hover {
+  background: var(--main-theme-color);
+}
+
+.combobox {
+  position: relative;
+  margin-bottom: 30px;
+}
+.combobox input {
+  padding: 5px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #dcdcdc;
+}
+.combobox ul {
+  max-height: 10rem !important;
+  overflow: auto;
+  position: absolute;
+  background: #fff;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: none;
+  border: 1px solid #ccc;
+  z-index: 2;
+}
+.combobox ul li {
+  padding: 3px 10px;
+  display: block;
+  cursor: pointer;
+  border-bottom: 1px solid #ccc;
+}
+.combobox ul li p {
+  font-size: 12px;
+}
+.combobox ul li:hover {
+  color: white;
+  background: #00a461;
+}
+
+.loader-container {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  z-index: 9999;
+}
+
+.loader {
+  position: relative;
+}
+.loader .dot {
+  animation-name: movement;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  height: 10px;
+  position: absolute;
+  top: -10px;
+  transform: translate3d(0, -25px, 0) scale(1);
+  width: 10px;
+}
+.loader .dot:nth-of-type(1) {
+  animation-delay: -0.1s;
+  left: 150px;
+}
+.loader .dot:nth-of-type(1)::before {
+  animation-delay: -0.1s;
+}
+.loader .dot:nth-of-type(2) {
+  animation-delay: -1.2s;
+  left: 150px;
+}
+.loader .dot:nth-of-type(2)::before {
+  animation-delay: -1.2s;
+}
+.loader .dot:nth-of-type(3) {
+  animation-delay: -0.3s;
+  left: 125px;
+}
+.loader .dot:nth-of-type(3)::before {
+  animation-delay: -0.3s;
+}
+.loader .dot:nth-of-type(4) {
+  animation-delay: -1.4s;
+  left: 125px;
+}
+.loader .dot:nth-of-type(4)::before {
+  animation-delay: -1.4s;
+}
+.loader .dot:nth-of-type(5) {
+  animation-delay: -0.5s;
+  left: 100px;
+}
+.loader .dot:nth-of-type(5)::before {
+  animation-delay: -0.5s;
+}
+.loader .dot:nth-of-type(6) {
+  animation-delay: -1.6s;
+  left: 100px;
+}
+.loader .dot:nth-of-type(6)::before {
+  animation-delay: -1.6s;
+}
+.loader .dot:nth-of-type(7) {
+  animation-delay: -0.7s;
+  left: 75px;
+}
+.loader .dot:nth-of-type(7)::before {
+  animation-delay: -0.7s;
+}
+.loader .dot:nth-of-type(8) {
+  animation-delay: -1.8s;
+  left: 75px;
+}
+.loader .dot:nth-of-type(8)::before {
+  animation-delay: -1.8s;
+}
+.loader .dot:nth-of-type(9) {
+  animation-delay: -0.9s;
+  left: 50px;
+}
+.loader .dot:nth-of-type(9)::before {
+  animation-delay: -0.9s;
+}
+.loader .dot:nth-of-type(10) {
+  animation-delay: -2s;
+  left: 50px;
+}
+.loader .dot:nth-of-type(10)::before {
+  animation-delay: -2s;
+}
+.loader .dot:nth-of-type(11) {
+  animation-delay: -1.1s;
+  left: 25px;
+}
+.loader .dot:nth-of-type(11)::before {
+  animation-delay: -1.1s;
+}
+.loader .dot:nth-of-type(12) {
+  animation-delay: -2.2s;
+  left: 25px;
+}
+.loader .dot:nth-of-type(12)::before {
+  animation-delay: -2.2s;
+}
+.loader .dot:nth-of-type(13) {
+  animation-delay: -1.3s;
+  left: 0px;
+}
+.loader .dot:nth-of-type(13)::before {
+  animation-delay: -1.3s;
+}
+.loader .dot:nth-of-type(14) {
+  animation-delay: -2.4s;
+  left: 0px;
+}
+.loader .dot:nth-of-type(14)::before {
+  animation-delay: -2.4s;
+}
+.loader .dot:nth-of-type(15) {
+  animation-delay: -1.5s;
+  left: -25px;
+}
+.loader .dot:nth-of-type(15)::before {
+  animation-delay: -1.5s;
+}
+.loader .dot:nth-of-type(16) {
+  animation-delay: -2.6s;
+  left: -25px;
+}
+.loader .dot:nth-of-type(16)::before {
+  animation-delay: -2.6s;
+}
+.loader .dot:nth-of-type(17) {
+  animation-delay: -1.7s;
+  left: -50px;
+}
+.loader .dot:nth-of-type(17)::before {
+  animation-delay: -1.7s;
+}
+.loader .dot:nth-of-type(18) {
+  animation-delay: -2.8s;
+  left: -50px;
+}
+.loader .dot:nth-of-type(18)::before {
+  animation-delay: -2.8s;
+}
+.loader .dot:nth-of-type(19) {
+  animation-delay: -1.9s;
+  left: -75px;
+}
+.loader .dot:nth-of-type(19)::before {
+  animation-delay: -1.9s;
+}
+.loader .dot:nth-of-type(20) {
+  animation-delay: -3s;
+  left: -75px;
+}
+.loader .dot:nth-of-type(20)::before {
+  animation-delay: -3s;
+}
+.loader .dot:nth-of-type(21) {
+  animation-delay: -2.1s;
+  left: -100px;
+}
+.loader .dot:nth-of-type(21)::before {
+  animation-delay: -2.1s;
+}
+.loader .dot:nth-of-type(22) {
+  animation-delay: -3.2s;
+  left: -100px;
+}
+.loader .dot:nth-of-type(22)::before {
+  animation-delay: -3.2s;
+}
+.loader .dot:nth-of-type(23) {
+  animation-delay: -2.3s;
+  left: -125px;
+}
+.loader .dot:nth-of-type(23)::before {
+  animation-delay: -2.3s;
+}
+.loader .dot:nth-of-type(24) {
+  animation-delay: -3.4s;
+  left: -125px;
+}
+.loader .dot:nth-of-type(24)::before {
+  animation-delay: -3.4s;
+}
+.loader .dot:nth-of-type(25) {
+  animation-delay: -2.5s;
+  left: -150px;
+}
+.loader .dot:nth-of-type(25)::before {
+  animation-delay: -2.5s;
+}
+.loader .dot:nth-of-type(26) {
+  animation-delay: -3.6s;
+  left: -150px;
+}
+.loader .dot:nth-of-type(26)::before {
+  animation-delay: -3.6s;
+}
+.loader .dot::before {
+  animation-name: size-opacity;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  background: #57bd93;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 100%;
+  width: 100%;
+}
+.loader .dot:nth-of-type(even)::before {
+  background-color: #0f915b;
+}
+
+@keyframes movement {
+  0% {
+    transform: translate3d(0, -25px, 0);
+    z-index: 0;
+  }
+  50% {
+    transform: translate3d(0, 25px, 0);
+    z-index: 10;
+  }
+  100% {
+    transform: translate3d(0, -25px, 0);
+    z-index: -5;
+  }
+}
+@keyframes size-opacity {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  25% {
+    transform: scale(1.5);
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.35;
+    transform: scale(0.5);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
 /*# sourceMappingURL=login.css.map */
