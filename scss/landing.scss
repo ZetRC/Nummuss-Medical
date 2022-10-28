@@ -42,13 +42,15 @@ body{
     align-items: center;
     margin: 0 auto;
     justify-content:center;
-    margin-top: 6rem;
+    margin-top: 8rem;
+    margin-bottom: 8rem;
     img{
-        width: 28rem;
+        width: 15rem;
     }
     .text{
         width: 100%;
         max-width:35rem;
+        padding-right: 3rem;
     }
 }
 
@@ -70,6 +72,6 @@ body{
 }
 
 .logo{
-    height: 80px;
+    height: 5rem;
     cursor: pointer;
 }
