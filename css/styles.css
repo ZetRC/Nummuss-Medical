@@ -18,7 +18,7 @@ body {
 }
 
 .btn-main {
-  background: #00a461;
+  background: #019c7c;
   color: white;
 }
 
@@ -34,7 +34,7 @@ body {
 }
 
 .text-main {
-  color: #00a461;
+  color: #019c7c;
 }
 
 .rounded-full {
@@ -42,14 +42,14 @@ body {
 }
 
 a {
-  color: #00a461 !important;
+  color: #019c7c !important;
   transition: all 0.3s ease-in-out;
   text-decoration: none;
   cursor: pointer;
 }
 a:hover {
   filter: brightness(0.9);
-  color: #00a461;
+  color: #019c7c;
 }
 
 .box {
@@ -133,8 +133,8 @@ a:hover {
   display: none;
 }
 .sidebar .selected-item {
-  border-left: 5px solid #00a461;
-  color: #00a461;
+  border-left: 5px solid #019c7c;
+  color: #019c7c;
 }
 
 .navbar-logo {
@@ -387,7 +387,7 @@ a:hover {
 }
 
 .btn-main {
-  background-color: #00a461;
+  background-color: #019c7c;
   color: white;
   border: none;
   padding: 0 2.5rem;
@@ -436,11 +436,11 @@ a:hover {
   border-radius: 0.5rem 0.5rem 0 0;
 }
 .toggleable-box .toggleable-content .active-item {
-  background: #00a461 !important;
+  background: #019c7c !important;
   color: white !important;
 }
 .toggleable-box .box {
-  border-top: 3px solid #00a461;
+  border-top: 3px solid #019c7c;
 }
 .toggleable-box .box-option {
   display: none;
@@ -713,29 +713,29 @@ a:hover {
 .custom-border::before {
   top: -4px;
   left: -4px;
-  border-top: 4px solid #00a461;
-  border-left: 4px solid #00a461;
+  border-top: 4px solid #019c7c;
+  border-left: 4px solid #019c7c;
 }
 
 .custom-border::after {
   top: -4px;
   right: -4px;
-  border-top: 4px solid #00a461;
-  border-right: 4px solid #00a461;
+  border-top: 4px solid #019c7c;
+  border-right: 4px solid #019c7c;
 }
 
 .custom-border span::before {
   bottom: -4px;
   left: -4px;
-  border-bottom: 4px solid #00a461;
-  border-left: 4px solid #00a461;
+  border-bottom: 4px solid #019c7c;
+  border-left: 4px solid #019c7c;
 }
 
 .custom-border span::after {
   bottom: -4px;
   right: -4px;
-  border-bottom: 4px solid #00a461;
-  border-right: 4px solid #00a461;
+  border-bottom: 4px solid #019c7c;
+  border-right: 4px solid #019c7c;
 }
 
 .custom-border:hover {
@@ -887,7 +887,7 @@ a:hover {
 }
 
 .switch-success > .switch.switch-bootstrap:checked + .lable::before {
-  background-color: #00a461;
+  background-color: #019c7c;
 }
 
 .switch-danger > .switch.switch-bootstrap:checked + .lable::before {
@@ -910,7 +910,7 @@ a:hover {
 }
 
 :root {
-  --main-theme-color:#00a461;
+  --main-theme-color:#019c7c;
   --main-dark-grey:#586273;
   --main-light-grey: #f5f7fa;
   --main-theme-color-05:#f5f5f5;
@@ -920,8 +920,8 @@ a:hover {
 
 td.active.day,
 span.year.active {
-  background-color: #00a461 !important;
-  background: #00a461 !important;
+  background-color: #019c7c !important;
+  background: #019c7c !important;
 }
 
 .ui-menu .ui-menu-item {
@@ -1152,7 +1152,7 @@ ul.ui-timepicker-viewport {
 }
 .combobox ul li:hover {
   color: white;
-  background: #00a461;
+  background: #019c7c;
 }
 
 .loader-container {

@@ -1,3 +1,5 @@
+$main:#019c7c;
+
 * {
 	margin: 0;
 	padding: 0;
@@ -22,7 +24,7 @@
 }
 
 .text-main{
-    color:#28a745;
+    color:$main;
 }
 
 .flex-1{
@@ -74,7 +76,7 @@
     h2{
         text-align:center;
         margin-bottom:3.5rem;
-        color: #00a461;
+        color: #019c7c;
         font-weight:bold;
     }
 
@@ -96,8 +98,8 @@
 
             &:hover{
                 transform: scale(1.05);
-                border-color: #00a461;
-                color: #00a461;
+                border-color: #019c7c;
+                color: #019c7c;
             }
             i,svg{
                 font-size:6.5rem;
@@ -150,7 +152,7 @@
             svg{
                 font-size: 1.25rem;
                 margin-right: 1.25rem;
-                color: #00a461;
+                color: #019c7c;
             }
             span{
                 margin-right: 1.25rem;
@@ -166,7 +168,7 @@
                 color: #d16969;
             }
             .fa-eye:hover{
-                color: #00a461;
+                color: #019c7c;
             }
         }
     }
@@ -261,16 +263,16 @@ span.round-tab i{
     color:#555555;
 }
 .wizard li.active span.round-tab {
-    background: #00a461;
+    background: #019c7c;
     color: #fff;
-    border-color: #00a461;
+    border-color: #019c7c;
     transition:all .3s ease-in-out;
 }
 .wizard li.active span.round-tab i{
     color: #5bc0de;
 }
 .wizard .nav-tabs > li.active > a i{
-	//color: #00a461;
+	//color: #019c7c;
     color: white;
 }
 
@@ -343,7 +345,7 @@ span.round-tab i{
     margin-top: 30px;
 }
 .next-step{
-	background-color: #00a461;
+	background-color: #019c7c;
     color: white;
 }
 .skip-btn{
@@ -447,10 +449,10 @@ input[type="checkbox"]:checked::after{
     border-bottom: 1px solid #fff;
     transform: rotate(-45deg);
 }
-input[type="checkbox"]:checked::before{
+/* input[type="checkbox"]:checked::before{
     background-color: #18ba60;
     border-color: #18ba60;
-}
+} */
 
 @media (max-width: 767px){
 	.sign-content h3{

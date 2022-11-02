@@ -18,12 +18,12 @@ body {
   margin: 0 10px;
   font-size: 1.15rem;
   cursor: pointer;
-  color: #57bd93;
+  color: #019c7c;
   transition: all 0.15s ease-in-out;
   padding: 10px;
 }
 .navbar ul li:hover {
-  background: #00a461;
+  background: #019c7c;
   color: white;
   padding: 10px;
   border-radius: 0.5rem;
@@ -63,7 +63,7 @@ body {
 }
 .beneficios .beneficios-box i,
 .beneficios .beneficios-box svg {
-  color: #28a745;
+  color: #019c7c;
   font-size: 1.75rem;
   padding: 1rem;
 }

@@ -1,5 +1,5 @@
 //General
-$main:#00a461;
+$main:#019c7c;
 
 body{
     margin:0;
@@ -39,7 +39,7 @@ body{
 }
 
 .btn-main{
-    background: #00a461 !important;
+    background: $main !important;
     color: white !important;
     
 }
@@ -151,9 +151,9 @@ a{
     text-align: left;
     background: white;
     &:hover{
-        color: #00a461;
+        color: $main;
         i,svg{
-            color: #00a461;
+            color: $main;
         }
     }
 }
@@ -190,7 +190,7 @@ section .custom-table{
 
     th{
         color:white !important;
-        background-color: #00a461 !important;
+        background-color: $main !important;
     }
 
     td{
@@ -204,13 +204,13 @@ section .custom-table{
     }
 
     .active-row{
-        color:#00a461;
+        color:$main;
     }
 }
 
 //modicar bootstrap 
 
 .form-check-input:checked {
-    border-color: #00a461 !important;
-    background-color: #00a461 !important;
+    border-color: $main !important;
+    background-color: $main !important;
 }

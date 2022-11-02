@@ -20,7 +20,7 @@
 }
 
 .text-main {
-  color: #28a745;
+  color: #019c7c;
 }
 
 .flex-1 {
@@ -67,7 +67,7 @@
 .selection-box h2 {
   text-align: center;
   margin-bottom: 3.5rem;
-  color: #00a461;
+  color: #019c7c;
   font-weight: bold;
 }
 .selection-box .options-container {
@@ -89,8 +89,8 @@
 }
 .selection-box .options-container .box-option:hover {
   transform: scale(1.05);
-  border-color: #00a461;
-  color: #00a461;
+  border-color: #019c7c;
+  color: #019c7c;
 }
 .selection-box .options-container .box-option i, .selection-box .options-container .box-option svg {
   font-size: 6.5rem;
@@ -131,7 +131,7 @@
 .subir-archivos-box .archivo-item .archivo-info svg {
   font-size: 1.25rem;
   margin-right: 1.25rem;
-  color: #00a461;
+  color: #019c7c;
 }
 .subir-archivos-box .archivo-item .archivo-info span {
   margin-right: 1.25rem;
@@ -145,7 +145,7 @@
   color: #d16969;
 }
 .subir-archivos-box .archivo-item .archivo-buttons .fa-eye:hover {
-  color: #00a461;
+  color: #019c7c;
 }
 
 /*------------------------*/
@@ -237,9 +237,9 @@ span.round-tab i {
 }
 
 .wizard li.active span.round-tab {
-  background: #00a461;
+  background: #019c7c;
   color: #fff;
-  border-color: #00a461;
+  border-color: #019c7c;
   transition: all 0.3s ease-in-out;
 }
 
@@ -319,7 +319,7 @@ span.round-tab i {
 }
 
 .next-step {
-  background-color: #00a461;
+  background-color: #019c7c;
   color: white;
 }
 
@@ -441,11 +441,10 @@ input[type=checkbox]:checked::after {
   transform: rotate(-45deg);
 }
 
-input[type=checkbox]:checked::before {
-  background-color: #18ba60;
-  border-color: #18ba60;
-}
-
+/* input[type="checkbox"]:checked::before{
+    background-color: #18ba60;
+    border-color: #18ba60;
+} */
 @media (max-width: 767px) {
   .sign-content h3 {
     font-size: 40px;
@@ -481,7 +480,7 @@ label {
 }
 
 :root {
-  --main-theme-color:#00a461;
+  --main-theme-color:#019c7c;
   --main-dark-grey:#586273;
   --main-light-grey: #f5f7fa;
   --main-theme-color-05:#f5f5f5;
@@ -491,8 +490,8 @@ label {
 
 td.active.day,
 span.year.active {
-  background-color: #00a461 !important;
-  background: #00a461 !important;
+  background-color: #019c7c !important;
+  background: #019c7c !important;
 }
 
 .ui-menu .ui-menu-item {
@@ -723,7 +722,7 @@ ul.ui-timepicker-viewport {
 }
 .combobox ul li:hover {
   color: white;
-  background: #00a461;
+  background: #019c7c;
 }
 
 .loader-container {

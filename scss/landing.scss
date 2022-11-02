@@ -1,4 +1,4 @@
-$green:#28a745;
+$main:#019c7c;
 
 body{
     box-sizing: border-box;
@@ -18,11 +18,11 @@ body{
             margin: 0 10px;
             font-size:1.15rem;
             cursor: pointer;
-            color: #57bd93;
+            color: $main;
             transition:all .15s ease-in-out;
             padding: 10px;
             &:hover{
-                background: #00a461;
+                background: $main;
                 color: white;
                 padding: 10px;
                 border-radius: .5rem;
@@ -64,7 +64,7 @@ body{
         margin-bottom: 1.5rem;
         i,
         svg{
-            color: $green;
+            color: $main;
             font-size: 1.75rem;
             padding: 1rem;
         }
