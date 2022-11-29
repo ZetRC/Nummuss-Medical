@@ -78,6 +78,10 @@
           <i class="fa-solid fa-pen-to-square"></i>
           Modulo editar
         </div>
+        <div class="sidebar-element" data-target="#timeline-section">
+          <i class="fa-solid fa-calendar-days"></i>
+          Linea de tiempo
+        </div>
     </section>
     <div class="" style="flex:1;" id="body-sections">
       <!-- navbar -->
@@ -764,6 +768,65 @@
             </div>
         </div>
       </section>
+      <section class="body-section container" id="timeline-section">
+        <div id="conference-timeline">
+          <div class="timeline-start">linea del tiempo</div>
+          <div class="conference-center-line"></div>
+          <div class="conference-timeline-content">
+            <div class="timeline-article">
+              <div class="content-right-container">
+                <div class="content-right">
+                  <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is.</p>
+                  <div class="text-main" type=button data-bs-toggle="modal" data-bs-target="#modal-timeline">ver más</div>
+                </div>
+                <span class="timeline-author">17 de septiembre del 2021</span>
+              </div>
+              <div class="meta-date"></div>
+            </div>
+            <div class="timeline-article">
+              <div class="content-left-container">
+                <div class="content-left">
+                  <p>Mankind, let us preserve and increase this beauty, and not destroy it!</p>
+                </div>
+                <span class="timeline-author">15 de Enero del 2022</span>
+              </div>
+              <div class="meta-date"></div>
+            </div>
+            <div class="timeline-article">
+              <div class="content-right-container">
+                <div class="content-right">
+                  <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is.</p>
+                </div>
+                <span class="timeline-author">17 de abril del 2022</span>
+              </div>
+              <div class="meta-date">
+              </div>
+            </div>
+            <div class="timeline-article">
+              <div class="content-left-container">
+                <div class="content-left">
+                  <p>When I orbited the Earth in a spaceship, I preserve and increase this beauty, and not destroy it! </p>
+                  <div class="text-main" type=button data-bs-toggle="modal" data-bs-target="#modal-timeline">ver más</div>
+                </div>
+                <span class="timeline-author">15 de Enero del 2022</span>
+              </div>
+              <div class="meta-date"></div>
+            </div>
+            <div class="timeline-article">
+              <div class="content-right-container">
+                <div class="content-right">
+                  <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is.</p>
+                </div>
+                <span class="timeline-author">17 de abril del 2022</span>
+              </div>
+              <div class="meta-date">
+              </div>
+            </div>
+          </div>
+          <div class="timeline-end">Fin</div>
+        </div>
+      </div>
+      </section>
     </div>
     <!-- footer -->
     <footer class="site-footer d-none">
@@ -833,6 +896,22 @@
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
         <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal timeline-->
+<div class="modal fade" id="modal-timeline" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+  <div class="modal-dialog modal-xl" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLongTitle">Detalles de evento</h5>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-light" data-dismiss="modal">Cerrar</button>
       </div>
     </div>
   </div>
