@@ -1,9 +1,12 @@
     /*===== Vertical Timeline =====*/
+
     #conference-timeline {
-        position: relative;
-        max-width: 920px;
-        width: 100%;
-        margin: 0 auto;
+      position: relative;
+      width: 100%;
+      max-width:1500px;
+      margin: 0 auto;
+      overflow: auto;
+      max-width: none;
       }
       #conference-timeline .timeline-start,
       #conference-timeline .timeline-end {
@@ -22,17 +25,18 @@
         border-radius:8px;
       }
       #conference-timeline .conference-center-line {
-        position: absolute;
         width: 3px;
         height: 100%;
-        top: 0;
-        left: 50%;
         margin-left: -2px;
         background: #fff;
         z-index: -1;
+        position:relative;
+        top:58px;
+        height:3px !important;
+        min-width: 100%;
       }
       #conference-timeline .conference-timeline-content {
-        padding-top: 67px;
+        display:flex;
         padding-bottom: 67px;
       }
       .timeline-article {
@@ -41,10 +45,16 @@
         position: relative;
         overflow: hidden;
         margin: 22px 0;
+        min-width: 23rem; 
       }
+
+      .state{
+        font-size: .85rem;
+        margin-bottom: .35rem;
+      }
+
       .timeline-article .content-left-container,
       .timeline-article .content-right-container {
-        max-width: 44%;
         width: 100%;
       }
       .timeline-article .timeline-author {
@@ -52,9 +62,9 @@
         font-weight: 400;
         font-size: 14px;
         line-height: 24px;
-        color: #242424;
+        color: #777777;
         text-align: right;
-        font-size:.85rem;
+        font-size:.8rem;
       }
       .timeline-article .content-left,
       .timeline-article .content-right {
@@ -66,6 +76,7 @@
         padding: 10px 30px;
         margin-bottom:5px;
         border-radius:8px;
+        transition:all .3s ease-in-out;
       }
       .timeline-article p {
         padding: 0;
@@ -93,7 +104,8 @@
       .timeline-article .content-left:before,
       .timeline-article .content-right:before{
         position: absolute;
-        top: 20px;
+        top: -20px;
+        left:15px;
         font-size: 23px;
         font-family: "FontAwesome";
         color: #fff;
@@ -110,8 +122,8 @@
         position: absolute;
         top: 0;
         left: 50%;
-        width: 30px;
-        height: 30px;
+        width: 25px;
+        height: 25px;
         margin-left: -15px;
         margin-top:20px;
         color: #fff;
@@ -132,10 +144,9 @@
         font-size: 18px;
         line-height: 10px;
       }
-      /*===== // Vertical Timeline =====*/
-      
+
       /*===== Resonsive Vertical Timeline =====*/
-      @media only screen and (max-width: 830px) {
+      @media only screen and (min-width: 1px) {
         #conference-timeline .timeline-start,
         #conference-timeline .timeline-end {
           margin: 0;
@@ -145,15 +156,14 @@
           left: 50px;
         }
         .timeline-article .meta-date {
-          margin-left: 0;
-          left: 20px;
+          margin-left: 10px;
         }
         .timeline-article .content-left-container,
         .timeline-article .content-right-container {
           max-width: 100%;
           width: auto;
           float: none;
-          margin-left: 110px;
+          margin-left: 3rem;
           min-height: 53px;
         }
         .timeline-article .content-left-container {
@@ -163,23 +173,19 @@
         .timeline-article .content-right {
           padding: 10px 25px;
           min-height: 65px;
+          margin-top:4rem;
+          transition:all .15s ease-in-out;
+          &:hover{
+            margin-top:3.75rem;
+          }
         }
-        .timeline-article .content-left:before {
-          content: "\f0d9";
+        .timeline-article .content-left:before,
+        .timeline-article .content-right:before {
+          content: "\f0d8";
           right: auto;
-          left: -8px;
+          left: 150px;
         }
         .timeline-article .content-right:before {
           display: none;
         }
       }
-      @media only screen and (max-width: 400px) {
-        .timeline-article p {
-          margin: 0;
-        }
-        .timeline-article p span.article-number {
-          display: none;
-        }
-        
-      }
-      /*===== // Resonsive Vertical Timeline =====*/

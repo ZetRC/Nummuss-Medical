@@ -37,8 +37,24 @@ body {
   color: #019c7c;
 }
 
+.text-danger {
+  color: #dc3545 !important;
+}
+
+.text-warning {
+  color: #f7af3a !important;
+}
+
+.text-info {
+  color: #0da0f0 !important;
+}
+
 .rounded-full {
   border-radius: 9999px;
+}
+
+.text-sm {
+  font-size: 0.85rem;
 }
 
 a {
@@ -79,7 +95,7 @@ a:hover {
 }
 .sidebar .section-label {
   font-size: 0.1 0.15rem;
-  color: #242424;
+  color: rgb(36, 36, 36);
   font-weight: bold;
   margin-bottom: 1.5rem;
   margin-top: 2.5rem;
@@ -135,6 +151,11 @@ a:hover {
 .sidebar .selected-item {
   border-left: 5px solid #019c7c;
   color: #019c7c;
+}
+
+.navbar .nav-element {
+  color: #019c7c;
+  cursor: pointer;
 }
 
 .navbar-logo {
@@ -247,7 +268,6 @@ a:hover {
   .site-footer {
     padding-bottom: 0;
   }
-
   .site-footer .copyright-text, .site-footer .social-icons {
     text-align: center;
   }
@@ -1419,9 +1439,11 @@ ul.ui-timepicker-viewport {
 /*===== Vertical Timeline =====*/
 #conference-timeline {
   position: relative;
-  max-width: 920px;
   width: 100%;
+  max-width: 1500px;
   margin: 0 auto;
+  overflow: auto;
+  max-width: none;
 }
 
 #conference-timeline .timeline-start,
@@ -1442,18 +1464,19 @@ ul.ui-timepicker-viewport {
 }
 
 #conference-timeline .conference-center-line {
-  position: absolute;
   width: 3px;
   height: 100%;
-  top: 0;
-  left: 50%;
   margin-left: -2px;
   background: #fff;
   z-index: -1;
+  position: relative;
+  top: 58px;
+  height: 3px !important;
+  min-width: 100%;
 }
 
 #conference-timeline .conference-timeline-content {
-  padding-top: 67px;
+  display: flex;
   padding-bottom: 67px;
 }
 
@@ -1463,11 +1486,16 @@ ul.ui-timepicker-viewport {
   position: relative;
   overflow: hidden;
   margin: 22px 0;
+  min-width: 23rem;
+}
+
+.state {
+  font-size: 0.85rem;
+  margin-bottom: 0.35rem;
 }
 
 .timeline-article .content-left-container,
 .timeline-article .content-right-container {
-  max-width: 44%;
   width: 100%;
 }
 
@@ -1476,9 +1504,9 @@ ul.ui-timepicker-viewport {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #242424;
+  color: #777777;
   text-align: right;
-  font-size: 0.85rem;
+  font-size: 0.8rem;
 }
 
 .timeline-article .content-left,
@@ -1491,6 +1519,7 @@ ul.ui-timepicker-viewport {
   padding: 10px 30px;
   margin-bottom: 5px;
   border-radius: 8px;
+  transition: all 0.3s ease-in-out;
 }
 
 .timeline-article p {
@@ -1523,7 +1552,8 @@ ul.ui-timepicker-viewport {
 .timeline-article .content-left:before,
 .timeline-article .content-right:before {
   position: absolute;
-  top: 20px;
+  top: -20px;
+  left: 15px;
   font-size: 23px;
   font-family: "FontAwesome";
   color: #fff;
@@ -1543,8 +1573,8 @@ ul.ui-timepicker-viewport {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 30px;
-  height: 30px;
+  width: 25px;
+  height: 25px;
   margin-left: -15px;
   margin-top: 20px;
   color: #fff;
@@ -1569,62 +1599,50 @@ ul.ui-timepicker-viewport {
   line-height: 10px;
 }
 
-/*===== // Vertical Timeline =====*/
 /*===== Resonsive Vertical Timeline =====*/
-@media only screen and (max-width: 830px) {
+@media only screen and (min-width: 1px) {
   #conference-timeline .timeline-start,
-#conference-timeline .timeline-end {
+  #conference-timeline .timeline-end {
     margin: 0;
   }
-
   #conference-timeline .conference-center-line {
     margin-left: 0;
     left: 50px;
   }
-
   .timeline-article .meta-date {
-    margin-left: 0;
-    left: 20px;
+    margin-left: 10px;
   }
-
   .timeline-article .content-left-container,
-.timeline-article .content-right-container {
+  .timeline-article .content-right-container {
     max-width: 100%;
     width: auto;
     float: none;
-    margin-left: 110px;
+    margin-left: 3rem;
     min-height: 53px;
   }
-
   .timeline-article .content-left-container {
     margin-bottom: 20px;
   }
-
   .timeline-article .content-left,
-.timeline-article .content-right {
+  .timeline-article .content-right {
     padding: 10px 25px;
     min-height: 65px;
+    margin-top: 4rem;
+    transition: all 0.15s ease-in-out;
   }
-
-  .timeline-article .content-left:before {
-    content: "\f0d9";
+  .timeline-article .content-left:hover,
+  .timeline-article .content-right:hover {
+    margin-top: 3.75rem;
+  }
+  .timeline-article .content-left:before,
+  .timeline-article .content-right:before {
+    content: "\f0d8";
     right: auto;
-    left: -8px;
+    left: 150px;
   }
-
   .timeline-article .content-right:before {
     display: none;
   }
 }
-@media only screen and (max-width: 400px) {
-  .timeline-article p {
-    margin: 0;
-  }
-
-  .timeline-article p span.article-number {
-    display: none;
-  }
-}
-/*===== // Resonsive Vertical Timeline =====*/
 
 /*# sourceMappingURL=styles.css.map */

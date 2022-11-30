@@ -40,8 +40,25 @@ body{
   color: $main;
 }
 
+.text-danger{
+  color: #dc3545!important;
+}
+
+.text-warning{
+  color: #f7af3a !important;
+}
+
+.text-info{
+  color: #0da0f0 !important;
+  
+}
+
 .rounded-full{
   border-radius: 9999px;
+}
+
+.text-sm{
+  font-size: .85rem;
 }
 
 a{
@@ -158,6 +175,14 @@ a{
 }
 
 //navbar
+
+.navbar{
+  .nav-element{
+    color: $main;
+    cursor:pointer;
+
+  }
+}
 
 .navbar-logo{
   display:flex;

@@ -9,6 +9,7 @@ var homeLayout = (function() {
          functions.handleDinamicTables();
          functions.handleComboBox();
          functions.handleTimepicker();
+         functions.handleTimeline();
 	};
 	
 	var functions = {	
@@ -175,7 +176,15 @@ var homeLayout = (function() {
             minViewMode: "years",
             autoclose:true
          });   
+        },
+        handleTimeline : function(){          
+          $('#timeline-selector').click(function(){
+            const currentLineWidth = $('#conference-timeline').get(0).scrollWidth
+            console.log({currentLineWidth})
+            $("#conference-center-line").css("width", currentLineWidth);
+          })
         }
+        
 	};
 	
 	var initialize = function() {

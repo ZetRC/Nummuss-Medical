@@ -78,10 +78,6 @@
           <i class="fa-solid fa-pen-to-square"></i>
           Modulo editar
         </div>
-        <div class="sidebar-element" data-target="#timeline-section">
-          <i class="fa-solid fa-calendar-days"></i>
-          Linea de tiempo
-        </div>
     </section>
     <div class="" style="flex:1;" id="body-sections">
       <!-- navbar -->
@@ -95,6 +91,10 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <div class="sidebar-element nav-element" id="timeline-selector" data-target="#timeline-section">
+              <i class="fa-solid fa-calendar-days"></i>
+              Timeline
+            </div>
             <a class="profile-content" href="#/" data-target="#perfil-doctor-view" id="perfil-selector">
                 <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="">
                 <h6>Ricardo Cruz</h6>
@@ -768,14 +768,18 @@
             </div>
         </div>
       </section>
-      <section class="body-section container" id="timeline-section">
-        <div id="conference-timeline">
+      <section class="body-section container hidden" id="timeline-section">
+        <div id="conference-timeline" class="horizontal-timeline">
           <div class="timeline-start">linea del tiempo</div>
-          <div class="conference-center-line"></div>
+          <div class="conference-center-line" id="conference-center-line"></div>
           <div class="conference-timeline-content">
             <div class="timeline-article">
               <div class="content-right-container">
-                <div class="content-right">
+                <div class="content-left">
+                  <div class="state text-warning">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Importante
+                  </div>
                   <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is.</p>
                   <div class="text-main" type=button data-bs-toggle="modal" data-bs-target="#modal-timeline">ver más</div>
                 </div>
@@ -786,6 +790,10 @@
             <div class="timeline-article">
               <div class="content-left-container">
                 <div class="content-left">
+                  <div class="state text-info">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Importacia Moderada
+                  </div>
                   <p>Mankind, let us preserve and increase this beauty, and not destroy it!</p>
                 </div>
                 <span class="timeline-author">15 de Enero del 2022</span>
@@ -793,8 +801,12 @@
               <div class="meta-date"></div>
             </div>
             <div class="timeline-article">
-              <div class="content-right-container">
-                <div class="content-right">
+              <div class="content-left-container">
+                <div class="content-left">
+                  <div class="state text-main">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Importancia baja
+                  </div>
                   <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is.</p>
                 </div>
                 <span class="timeline-author">17 de abril del 2022</span>
@@ -805,6 +817,10 @@
             <div class="timeline-article">
               <div class="content-left-container">
                 <div class="content-left">
+                  <div class="state text-main">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Importancia baja
+                  </div>
                   <p>When I orbited the Earth in a spaceship, I preserve and increase this beauty, and not destroy it! </p>
                   <div class="text-main" type=button data-bs-toggle="modal" data-bs-target="#modal-timeline">ver más</div>
                 </div>
@@ -813,8 +829,12 @@
               <div class="meta-date"></div>
             </div>
             <div class="timeline-article">
-              <div class="content-right-container">
-                <div class="content-right">
+              <div class="content-left-container">
+                <div class="content-left">
+                  <div class="state text-main">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Importancia baja
+                  </div>
                   <p>When I orbited the Earth in a spaceship, I saw for the first time how beautiful our planet is.</p>
                 </div>
                 <span class="timeline-author">17 de abril del 2022</span>
@@ -823,9 +843,7 @@
               </div>
             </div>
           </div>
-          <div class="timeline-end">Fin</div>
         </div>
-      </div>
       </section>
     </div>
     <!-- footer -->
