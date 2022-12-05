@@ -1437,6 +1437,10 @@ ul.ui-timepicker-viewport {
   }
 }
 /*===== Vertical Timeline =====*/
+#conference-timeline::-webkit-scrollbar {
+  display: none;
+}
+
 #conference-timeline {
   position: relative;
   width: 100%;
@@ -1451,15 +1455,15 @@ ul.ui-timepicker-viewport {
   display: table;
   font-family: "Roboto", sans-serif;
   font-size: 1rem;
-  font-weight: bold;
   text-transform: uppercase;
   background: #019c7c;
-  padding: 15px 23px;
+  padding: 8px 15px;
   color: #fff;
   max-width: 14rem;
   width: 100%;
   text-align: center;
   margin: 0 auto;
+  margin-left: 30px !important;
   border-radius: 8px;
 }
 
@@ -1473,11 +1477,12 @@ ul.ui-timepicker-viewport {
   top: 58px;
   height: 3px !important;
   min-width: 100%;
+  background: #ededed;
+  z-index: 0;
 }
 
 #conference-timeline .conference-timeline-content {
   display: flex;
-  padding-bottom: 67px;
 }
 
 .timeline-article {
@@ -1485,8 +1490,9 @@ ul.ui-timepicker-viewport {
   height: 100%;
   position: relative;
   overflow: hidden;
-  margin: 22px 0;
-  min-width: 23rem;
+  margin-top: 22px;
+  margin-bottom: 10px;
+  min-width: 15rem;
 }
 
 .state {
@@ -1513,7 +1519,8 @@ ul.ui-timepicker-viewport {
 .timeline-article .content-right {
   position: relative;
   width: auto;
-  border: 1px solid #ddd;
+  border: 1px solid #dcdcdc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   background-color: #fff;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.03);
   padding: 10px 30px;
@@ -1599,6 +1606,13 @@ ul.ui-timepicker-viewport {
   line-height: 10px;
 }
 
+.timeline-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
 /*===== Resonsive Vertical Timeline =====*/
 @media only screen and (min-width: 1px) {
   #conference-timeline .timeline-start,
@@ -1617,7 +1631,7 @@ ul.ui-timepicker-viewport {
     max-width: 100%;
     width: auto;
     float: none;
-    margin-left: 3rem;
+    margin-left: 2.5rem;
     min-height: 53px;
   }
   .timeline-article .content-left-container {
@@ -1625,10 +1639,11 @@ ul.ui-timepicker-viewport {
   }
   .timeline-article .content-left,
   .timeline-article .content-right {
-    padding: 10px 25px;
+    padding: 1rem;
     min-height: 65px;
     margin-top: 4rem;
     transition: all 0.15s ease-in-out;
+    background: #f9f9f9;
   }
   .timeline-article .content-left:hover,
   .timeline-article .content-right:hover {
@@ -1638,7 +1653,8 @@ ul.ui-timepicker-viewport {
   .timeline-article .content-right:before {
     content: "\f0d8";
     right: auto;
-    left: 150px;
+    left: 94px;
+    color: #dcdcdc;
   }
   .timeline-article .content-right:before {
     display: none;

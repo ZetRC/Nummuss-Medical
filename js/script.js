@@ -179,9 +179,34 @@ var homeLayout = (function() {
         },
         handleTimeline : function(){          
           $('#timeline-selector').click(function(){
-            const currentLineWidth = $('#conference-timeline').get(0).scrollWidth
-            console.log({currentLineWidth})
-            $("#conference-center-line").css("width", currentLineWidth);
+            setTimeout(()=>{
+              const currentLineWidth = $('#conference-timeline').get(0).scrollWidth
+              $("#conference-center-line").css("width", currentLineWidth);
+            },1000)
+          })
+
+          let currentCounter = 0
+          const timelineLenght = $(".conference-timeline-content").children().length
+          //const visibleItems = $('.conference-timeline-content:visible').length;
+          $('.timeline-next-button').click(function(){
+              currentCounter++
+              $('#conference-timeline').animate({scrollLeft: 240 * currentCounter}, 300);
+              $('.timeline-prev-button').removeClass('hidden')       
+              
+              if(currentCounter === timelineLenght - 4){
+                $(this).addClass('hidden')
+              }
+          })
+
+          $('.timeline-prev-button').click(function(){
+            if(currentCounter >= 0){
+              currentCounter--
+              $('#conference-timeline').animate({scrollLeft: 240 * currentCounter}, 300);
+              $('.timeline-next-button').removeClass('hidden')  
+              if(currentCounter === 0 ){
+                $(this).addClass('hidden')
+              }
+            }
           })
         }
         
