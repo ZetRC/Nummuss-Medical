@@ -185,28 +185,18 @@ var homeLayout = (function() {
             },1000)
           })
 
-          let currentCounter = 0
-          const timelineLenght = $(".conference-timeline-content").children().length
-          //const visibleItems = $('.conference-timeline-content:visible').length;
           $('.timeline-next-button').click(function(){
-              currentCounter++
-              $('#conference-timeline').animate({scrollLeft: 240 * currentCounter}, 300);
-              $('.timeline-prev-button').removeClass('hidden')       
-              
-              if(currentCounter === timelineLenght - 4){
-                $(this).addClass('hidden')
-              }
-          })
+            const active = document.querySelector('.active-article')
+            active.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+            active.nextElementSibling.classList.add('active-article');
+            active.classList.remove('active-article');
+        })
 
           $('.timeline-prev-button').click(function(){
-            if(currentCounter >= 0){
-              currentCounter--
-              $('#conference-timeline').animate({scrollLeft: 240 * currentCounter}, 300);
-              $('.timeline-next-button').removeClass('hidden')  
-              if(currentCounter === 0 ){
-                $(this).addClass('hidden')
-              }
-            }
+            const active = document.querySelector('.active-article')
+            active.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
+            active.previousElementSibling.classList.add('active-article');
+            active.classList.remove('active-article');
           })
         }
         
