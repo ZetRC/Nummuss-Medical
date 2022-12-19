@@ -187,16 +187,22 @@ var homeLayout = (function() {
 
           $('.timeline-next-button').click(function(){
             const active = document.querySelector('.active-article')
-            active.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
-            active.nextElementSibling.classList.add('active-article');
-            active.classList.remove('active-article');
+            if(active.nextElementSibling !== null){
+              const newElement = active.nextElementSibling
+              newElement.classList.add('active-article');
+              active.classList.remove('active-article');
+              newElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' })
+            }
         })
 
           $('.timeline-prev-button').click(function(){
             const active = document.querySelector('.active-article')
-            active.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' })
-            active.previousElementSibling.classList.add('active-article');
-            active.classList.remove('active-article');
+            if(active.previousElementSibling !== null){
+              const prevElement = active.previousElementSibling
+              prevElement.classList.add('active-article');
+              active.classList.remove('active-article');
+              prevElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
+            }
           })
         }
         
