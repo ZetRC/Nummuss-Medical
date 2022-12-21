@@ -9,7 +9,7 @@ body {
   padding: 0;
   box-sizing: border-box;
   background: #e5e9eb;
-  color: #606060;
+  color: #6f7c7a;
   font-family: Arial, Helvetica, sans-serif;
 }
 
@@ -1492,12 +1492,25 @@ ul.ui-timepicker-viewport {
   overflow: hidden;
   margin-top: 22px;
   margin-bottom: 10px;
-  min-width: 15rem;
+  min-width: 15.5rem;
 }
 
 .state {
-  font-size: 0.85rem;
+  font-size: 0.8rem;
   margin-bottom: 0.35rem;
+}
+.state .time {
+  color: #7f9d97;
+  font-size: 0.75rem;
+}
+.state .time i,
+.state .time svg {
+  margin-right: 0.25rem;
+}
+
+.flex-state {
+  display: flex;
+  justify-content: space-between;
 }
 
 .timeline-article .content-left-container,
@@ -1510,9 +1523,18 @@ ul.ui-timepicker-viewport {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  color: #777777;
+  color: #7f9d97;
   text-align: right;
   font-size: 0.8rem;
+  position: absolute;
+  top: -5px;
+  left: 7rem;
+  display: flex;
+  align-items: center;
+}
+.timeline-article .timeline-author i,
+.timeline-article .timeline-author svg {
+  margin-right: 0.35rem;
 }
 
 .timeline-article .content-left,
@@ -1532,7 +1554,6 @@ ul.ui-timepicker-viewport {
 .timeline-article p {
   padding: 0;
   font-weight: 400;
-  color: #606060;
   font-size: 14px;
   line-height: 24px;
   position: relative;
@@ -1566,7 +1587,7 @@ ul.ui-timepicker-viewport {
   color: #fff;
 }
 
-.timeline-article .content-left:before {
+.timeline-article .content-left:first-child:before {
   content: "\f0da";
   right: -8px;
 }
@@ -1579,9 +1600,9 @@ ul.ui-timepicker-viewport {
 .timeline-article .meta-date {
   position: absolute;
   top: 0;
-  left: 50%;
-  width: 25px;
-  height: 25px;
+  left: 8rem;
+  width: 20px;
+  height: 20px;
   margin-left: -15px;
   margin-top: 20px;
   color: #fff;
@@ -1631,7 +1652,7 @@ ul.ui-timepicker-viewport {
     max-width: 100%;
     width: auto;
     float: none;
-    margin-left: 2.5rem;
+    margin-left: 3rem;
     min-height: 53px;
   }
   .timeline-article .content-left-container {
@@ -1639,21 +1660,27 @@ ul.ui-timepicker-viewport {
   }
   .timeline-article .content-left,
   .timeline-article .content-right {
-    padding: 1rem;
+    padding: 0.75rem;
+    border: 1px solid #ededed;
     min-height: 65px;
-    margin-top: 4rem;
     transition: all 0.15s ease-in-out;
     background: #f9f9f9;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    margin-top: 0.75rem;
   }
   .timeline-article .content-left:hover,
   .timeline-article .content-right:hover {
-    margin-top: 3.75rem;
+    background-color: #f1f1f1;
   }
-  .timeline-article .content-left:before,
-  .timeline-article .content-right:before {
+  .timeline-article .content-left:first-child,
+  .timeline-article .content-right:first-child {
+    margin-top: 4rem;
+  }
+  .timeline-article .content-left:first-child:before,
+  .timeline-article .content-right:first-child:before {
     content: "\f0d8";
     right: auto;
-    left: 94px;
+    left: 92px;
     color: #dcdcdc;
   }
   .timeline-article .content-right:before {
