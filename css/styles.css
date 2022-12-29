@@ -1438,9 +1438,10 @@ ul.ui-timepicker-viewport {
 }
 .vis-item {
   background: #f9f9f9 !important;
-  border: 1px solid #ededed !important;
+  border-color: rgba(163, 181, 178, 0.6784313725) !important;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px !important;
   font-size: 14px !important;
+  border-radius: 0.5rem !important;
 }
 
 .timeline-imp {
