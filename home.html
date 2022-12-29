@@ -13,6 +13,7 @@
       <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/timepicker/1.3.5/jquery.timepicker.min.css">
       <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.2/themes/smoothness/jquery-ui.css">
       <link href="./js/bootstrap/datepicker.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.18.1/vis.min.css">
       <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.css"/> -->
 
   </head>
@@ -854,152 +855,7 @@
       </div>
       <div class="modal-body">
         <div class="card card-body">
-          <div id="conference-timeline" class="horizontal-timeline">
-            <div class="conference-center-line" id="conference-center-line"></div>
-            <div class="conference-timeline-content" style="width:100%">
-              <div class="timeline-article active-article">
-                <div class="content-right-container">
-                  <div class="content-left">
-                    <div class="state flex-state text-main">
-                      <span>
-                        <i class="fa-solid fa-circle-exclamation"></i> Poco importante
-                      </span>
-                      <span class="time"></i>11:45 AM</span>
-                    </div>
-                    <p>Actividad de lectura</p>
-                  </div>
-                  <div class="content-left">
-                    <div class="state flex-state text-warning">
-                      <span>
-                        <i class="fa-solid fa-circle-exclamation"></i> 
-                        Importante
-                      </span>
-                      <span class="time"></i>08:25 AM</span>
-                    </div>
-                    <p>Medico expide receta</p>
-                  </div>
-                  <div class="content-left">
-                    <div class="state flex-state text-warning">
-                      <span>
-                        <i class="fa-solid fa-circle-exclamation"></i> Importante
-                      </span>
-                      <span class="time"></i>11:45 AM</span>
-                    </div>
-                    <p>Medico expide receta</p>
-                  </div>
-                  <div class="content-left">
-                    <div class="state flex-state text-info">
-                      <span>
-                        <i class="fa-solid fa-circle-exclamation"></i> Moderado
-                      </span>
-                      <span class="time"></i>04:45 PM</span>
-                    </div>
-                    <p>Solicitud de estudios medicos</p>
-                  </div>
-                  <span class="timeline-author"><i class="fa-solid fa-calendar-days"></i></i></i>2022.11.09</span>
-                </div>
-                <div class="meta-date"></div>
-              </div>
-              <div class="timeline-article active-article">
-                <div class="content-right-container">
-                  <div class="content-left">
-                    <div class="state flex-state text-warning">
-                      <span>
-                        <i class="fa-solid fa-circle-exclamation"></i> 
-                        Importante
-                      </span>
-                      <span class="time"></i>08:25 AM</span>
-                    </div>
-                    <p>Medico expide receta</p>
-                  </div>
-                  <div class="content-left">
-                    <div class="state flex-state text-info">
-                      <span>
-                        <i class="fa-solid fa-circle-exclamation"></i> Moderado
-                      </span>
-                      <span class="time"></i>04:45 PM</span>
-                    </div>
-                    <p>Solicitud de estudios medicos</p>
-                  </div>
-                  <span class="timeline-author"><i class="fa-solid fa-calendar-days"></i></i></i>2022.11.09</span>
-                </div>
-                <div class="meta-date"></div>
-              </div>
-              <div class="timeline-article active-article">
-                <div class="content-right-container">
-                  <div class="content-left">
-                    <div class="state flex-state text-main">
-                      <span>
-                        <i class="fa-solid fa-circle-exclamation"></i> Poco importante
-                      </span>
-                      <span class="time"></i>11:45 AM</span>
-                    </div>
-                    <p>Actividad de lectura</p>
-                  </div>
-                  <div class="content-left">
-                    <div class="state flex-state text-warning">
-                      <span>
-                        <i class="fa-solid fa-circle-exclamation"></i> 
-                        Importante
-                      </span>
-                      <span class="time"></i>08:25 AM</span>
-                    </div>
-                    <p>Medico expide receta</p>
-                  </div>
-                  <div class="content-left">
-                    <div class="state flex-state text-warning">
-                      <span>
-                        <i class="fa-solid fa-circle-exclamation"></i> Importante
-                      </span>
-                      <span class="time"></i>11:45 AM</span>
-                    </div>
-                    <p>Medico expide receta</p>
-                  </div>
-                  <span class="timeline-author"><i class="fa-solid fa-calendar-days"></i></i></i>2022.11.09</span>
-                </div>
-                <div class="meta-date"></div>
-              </div>
-              <div class="timeline-article active-article">
-                <div class="content-right-container">
-                  <div class="content-left">
-                    <div class="state flex-state text-main">
-                      <span>
-                        <i class="fa-solid fa-circle-exclamation"></i> Poco importante
-                      </span>
-                      <span class="time"></i>11:45 AM</span>
-                    </div>
-                    <p>Actividad de lectura</p>
-                  </div>
-                  <div class="content-left">
-                    <div class="state flex-state text-warning">
-                      <span>
-                        <i class="fa-solid fa-circle-exclamation"></i> 
-                        Importante
-                      </span>
-                      <span class="time"></i>08:25 AM</span>
-                    </div>
-                    <p>Medico expide receta</p>
-                  </div>
-                  <span class="timeline-author"><i class="fa-solid fa-calendar-days"></i></i></i>2022.11.09</span>
-                </div>
-                <div class="meta-date"></div>
-              </div>
-            </div>
-          </div>
-          <div class="timeline-buttons">
-            <div>
-              <button class="btn btn-main timeline-prev-button">
-                <i class="fa-solid fa-chevron-left"></i>
-                <div class="ml-2 d-inline-block">Anterior</div>
-              </button>
-            </div>
-            <div>
-              <button class="btnm btn-main timeline-next-button">
-                Siguiente 
-                <i class="fa-solid fa-chevron-right"></i>
-              </button>
-            </div>
-          </div>
+          <div id="visualization"></div>
         </div>
       </div>
       <div class="modal-footer">
@@ -1328,6 +1184,22 @@
   <script src="./js/dashboard.js"></script>
   <script src="./js/script.js"></script>
   <script src="./js/bootstrap/bootstrapDatePicker.js"></script>
+  <!-- Timeline -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vis/4.18.1/vis.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.0.5/handlebars.min.js"></script>
+  <script id="item-template" type="text/x-handlebars-template">
+    <table class="">
+      <tr>
+        <td class="timeline-imp"><i class="fa-solid fa-circle-exclamation"></i>{{timelineImportance}}</td>
+        <td class="timeline-time">{{timelineTime}}</td>
+        <tr>
+          <td colspan="3" class="timeline-description">{{timelineDescription}}</td>
+        </tr>
+      </tr>
+    </table>
+  </script>
+
+  <script src="../../../standalone/umd/vis-timeline-graph2d.min.js"></script>
   <!-- codigo QR -->
   <script>
           function openQRCamera(node) {

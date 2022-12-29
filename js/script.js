@@ -178,32 +178,103 @@ var homeLayout = (function() {
          });   
         },
         handleTimeline : function(){          
-          $('#timeline-selector').click(function(){
-            setTimeout(()=>{
-              const currentLineWidth = $('#conference-timeline').get(0).scrollWidth
-              $("#conference-center-line").css("width", currentLineWidth);
-            },1000)
-          })
+            // create a handlebars template
+            var source   = document.getElementById('item-template').innerHTML;
+            var template = Handlebars.compile(document.getElementById('item-template').innerHTML);
 
-          $('.timeline-next-button').click(function(){
-            const active = document.querySelector('.active-article')
-            if(active.nextElementSibling !== null){
-              const newElement = active.nextElementSibling
-              newElement.classList.add('active-article');
-              active.classList.remove('active-article');
-              newElement.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'start' })
-            }
-        })
+            // DOM element where the Timeline will be attached
+            var container = document.getElementById('visualization');
 
-          $('.timeline-prev-button').click(function(){
-            const active = document.querySelector('.active-article')
-            if(active.previousElementSibling !== null){
-              const prevElement = active.previousElementSibling
-              prevElement.classList.add('active-article');
-              active.classList.remove('active-article');
-              prevElement.scrollIntoView({ behavior: 'smooth', block: 'end', inline: 'end' })
-            }
-          })
+            // Create a DataSet (allows two way data-binding)
+            var items = new vis.DataSet([
+              {
+                timelineTime: '7:25 AM',
+                timelineDescription: 'Medico expide receta',
+                start: '2014-06-30T13:00:00',
+                timelineImportance: 'Importante',
+                className:'status-importante',
+                title: '<span>27 de Enero del 2022</span>'
+              },
+              {
+                timelineTime: '7:25 AM',
+                timelineDescription: 'Solicitud de estudios medicos',
+                start: '2014-06-30T17:00:00',
+                timelineImportance: 'Moderado',
+                className:'status-moderado'
+              },
+              {
+                timelineTime: '7:25 AM',
+                timelineDescription: 'Solicitud de estudios medicos',
+                start: '2014-07-01T13:00:00',
+                timelineImportance: 'Poca Importancia',
+                className:'status-moderado'
+              },
+              {
+                timelineTime: '7:25 AM',
+                timelineDescription: 'Solicitud de estudios medicos',
+                start: '2014-07-01T17:00:00',
+                timelineImportance: 'Importante',
+                className:'status-importante'
+              },
+              {
+                timelineTime: '7:25 AM',
+                timelineDescription: 'Solicitud de estudios medicos',
+                start: '2014-07-04T13:00:00',
+                timelineImportance: 'Poca Importancia',
+                className:'status-moderado'
+              },
+              {
+                timelineTime: '7:25 AM',
+                timelineDescription: 'Medico expide receta',
+                start: '2014-07-04T17:00:00',
+                timelineImportance: 'Importante',
+                className:'status-importante'
+              },
+              {
+                timelineTime: '7:25 AM',
+                timelineDescription: 'Medico expide receta',
+                start: '2014-07-05T13:00:00',
+                timelineImportance: 'Moderado',
+                className:'status-moderado'
+              },
+              {
+                timelineTime: '7:25 AM',
+                timelineDescription: 'Solicitud de estudios medicos',
+                start: '2014-07-05T17:00:00',
+                timelineImportance: 'Importante',
+                className:'status-importante'
+              },
+              {
+                timelineTime: '7:25 AM',
+                timelineDescription: 'Medico expide receta',
+                start: '2014-07-08T17:00:00',
+                timelineImportance: 'Poca Importancia',
+                className:'status-poco-importante'
+              },
+              {
+                timelineTime: '7:25 AM',
+                timelineDescription: 'Solicitud de estudios medicos',
+                start: '2014-07-09T17:00:00',
+                timelineImportance: 'Importante',
+                className:'status-importante'
+              },
+              {
+                timelineTime: '7:25 AM',
+                timelineDescription: 'Medico expide receta',
+                start: '2014-07-13T16:00:00',
+                timelineImportance: 'Moderado',
+                className:'status-moderado'
+              }
+            ]);
+
+            // Configuration for the Timeline
+            var options = {
+              // specify a template for the items
+              template: template
+            };
+
+            // Create a Timeline
+            var timeline = new vis.Timeline(container, items, options);
         }
         
 	};
