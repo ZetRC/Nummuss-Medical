@@ -170,7 +170,7 @@ var homeLayout = (function() {
               minDate: 0,
           });
 
-          $("#datepicker").datePicker({
+          $("#datepicker, .year-datapicker").datePicker({
             format: "yyyy",
             viewMode: "years", 
             minViewMode: "years",
