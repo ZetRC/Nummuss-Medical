@@ -160,16 +160,19 @@ var homeLayout = (function() {
                 }); //each li
             });
         },
-        handleTimepicker : function(){          
+        handleTimepicker : function(){    
+          //permite seleccionar hora      
           $('.timepicker').timepicker({
             interval: 30,
           });
-
+          //permite seleccionar mes y día
           $( ".datepicker" ).datepicker({
               dateFormat: 'yy-mm-dd',
               minDate: 0,
           });
-
+          //permite seleccionar año, mes y día
+          $( ".completeDatepicker" ).gijgoDatepicker();
+          //sólo selecciona año
           $("#datepicker, .year-datapicker").datePicker({
             format: "yyyy",
             viewMode: "years", 
