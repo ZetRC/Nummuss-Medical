@@ -1482,4 +1482,53 @@ ul.ui-timepicker-viewport {
   color: #f7af3a !important;
 }
 
+.plans .general-desc {
+  text-align: center;
+  margin-top: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.plans .plan {
+  border: 1px solid #dcdcdc;
+  border-radius: 1rem;
+  padding: 2.5rem;
+  /* width:100%;
+  max-width:25rem; */
+  margin: 1.5rem;
+}
+.plans .plan .title {
+  font-size: 1.25rem;
+  text-align: center;
+  font-weight: bold;
+}
+.plans .plan .price {
+  font-size: 1.7rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 1.5rem 0;
+}
+.plans .plan .benefits-list {
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 1.5rem;
+}
+.plans .plan .benefits-list li {
+  margin-bottom: 1rem;
+}
+.plans .plan .btn-main {
+  margin: 0 auto;
+  margin-bottom: 1rem;
+  display: block;
+  width: 100%;
+  border-radius: 10rem;
+}
+.plans .plan .footer {
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.slick-prev:before, .slick-next:before {
+  color: #325d54 !important;
+  transform: scale(1.15);
+}
+
 /*# sourceMappingURL=styles.css.map */
