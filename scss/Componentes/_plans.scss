@@ -1,0 +1,51 @@
+.plans{
+    .general-desc{
+        text-align:center;
+        margin-top:2.5rem;
+        margin-bottom:2.5rem;
+    }
+
+    .plan{
+        border:1px solid #dcdcdc;
+        border-radius:1rem;
+        padding:2.5rem;
+        /* width:100%;
+        max-width:25rem; */
+        margin:1.5rem;
+        .title{
+            font-size:1.25rem;
+            text-align:center;
+            font-weight:bold;
+        }
+        .price{
+            font-size:1.7rem;
+            text-align:center;
+            font-weight:bold;
+            padding:1.5rem 0;
+        }
+        .benefits-list{
+            margin:0 auto;
+            display:block;
+            margin-bottom:1.5rem;
+            li{
+                margin-bottom:1rem;
+            }
+        }
+        .btn-main{
+            margin: 0 auto;
+            margin-bottom:1rem;
+            display: block;
+            width: 100%;
+            border-radius:10rem;
+        }
+        .footer{
+            text-align:center;
+            font-size:.8rem;
+        }
+    }
+}
+
+.slick-prev:before, .slick-next:before{
+    color: #325d54 !important;
+    transform:scale(1.15);
+}
