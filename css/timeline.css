@@ -1,0 +1,7 @@
+.vertical-timeline .vis-timeline{
+    transform: rotate(90deg)
+}
+
+.vertical-timeline .vis-item.vis-box{
+    transform:rotate(270deg)
+}

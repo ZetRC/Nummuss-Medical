@@ -273,7 +273,15 @@ var homeLayout = (function() {
             // Configuration for the Timeline
             var options = {
               // specify a template for the items
-              template: template
+              template: template,
+             
+              margin:150,
+              horizontalScroll:true,
+              height:800,
+              width:800,
+              zoom:false,
+              zoomKey: 'ctrlKey',
+              itemsAlwaysDraggable:false
             };
 
             // Create a Timeline
