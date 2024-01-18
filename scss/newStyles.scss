@@ -1,0 +1,53 @@
+.especialists-grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    text-align:center;
+    .userCard{
+        padding:2.5rem 1rem;
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+        width: 90%;
+        margin:0 auto;  
+        border-radius: 1rem;
+        margin-bottom: 1.5rem;
+        img{
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            border: 8px solid white;
+            width: 100%;
+            max-width: 10rem;
+            border-radius:999px;
+            aspect-ratio: 1;
+            object-fit:cover;
+        }   
+        .name{
+            margin:.5rem 0;
+            font-size:1.15rem;
+            font-weight: bold;
+        }
+        .desc{
+            color:#019c7c;
+            font-weight: bold;
+            width: fit-content;
+            margin:0 auto;
+            padding:4px 1rem;
+            background-color:#019c7c33;
+            border-radius:.5rem;
+
+        }
+        .adress{
+            margin-bottom: .5rem;
+        }
+
+        .actions-container{
+            display:flex;
+            justify-content:space-around;
+            margin-top:2rem;
+            cursor: pointer;
+            
+            div{
+                &:hover{
+                    filter: brightness(1.25);
+                }
+            }
+        }
+    }
+}

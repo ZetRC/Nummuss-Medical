@@ -16,6 +16,7 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/vis/4.18.1/vis.min.css">
       <link href="https://unpkg.com/gijgo@1.9.14/css/gijgo.min.css" rel="stylesheet" type="text/css" />
       <link rel="stylesheet" href="./js/gijgoDatepicker/gijgo.min.css">
+      <link rel="stylesheet" href="./css/newStyles.css">
       <!-- <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.12.1/datatables.min.css"/> -->
 
   </head>
@@ -383,7 +384,82 @@
      </section>
      <!-- Catálogo estados-->
      <section class="body-section container hidden" id="seccion-estados">
-       <div class="box mt-4">2</div>
+       <div class="box mt-4 px-4 py-4">
+         <h3 class="mt-1 mb-3">Buscar especialista</h3>
+          <div class="form-group">
+            <textarea class="form-control scrolleable-textarea" placeholder="Ingresa tus síntomas. En base a estos se realizará la búsqueda de un especialista."></textarea>
+          </div>
+          <button class="btn btn-main">Buscar especialista</button>
+       </div>
+       <div class="box mt-4">
+          <h3 class="mt-1 mb-3" style="margin-left: 1rem;">Encontrados (4)</h3>
+          <div class="especialists-grid">
+              <div class="userCard">
+                  <img src="https://i.pinimg.com/564x/9a/03/d0/9a03d0f5eeeca9056f6c94544490ce8e.jpg" alt="" class="userImg">
+                  <div class="name">Dr. John Doe</div>
+                  <div class="adress">Xochimilco, ciudad de Mexico</div>
+                  <div class="desc">Onthologist</div>
+                  <div class="actions-container">
+                    <div class="">
+                      <i class="fa-solid fa-phone"></i>
+                      Contactar
+                    </div>
+                    <div class="">
+                      <i class="fa-solid fa-eye"></i>
+                      Ver más
+                    </div>
+                  </div>
+              </div>
+              <div class="userCard">
+                  <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="userImg">
+                  <div class="name">Dr. Alice Doe</div>
+                  <div class="adress">Guadalajara, Jalisco</div>
+                  <div class="desc">Cardiologist</div>
+                  <div class="actions-container">
+                    <div class="">
+                      <i class="fa-solid fa-phone"></i>
+                      Contactar
+                    </div>
+                    <div class="">
+                      <i class="fa-solid fa-eye"></i>
+                      Ver más
+                    </div>
+                  </div>
+              </div>
+              <div class="userCard">
+                  <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="" class="userImg">
+                  <div class="name">Dr. Ricardo Cruz</div>
+                  <div class="adress">somewhere, Estado de Mexico</div>
+                  <div class="desc">Cardiology</div>
+                  <div class="actions-container">
+                    <div class="">
+                      <i class="fa-solid fa-phone"></i>
+                      Contactar
+                    </div>
+                    <div class="">
+                      <i class="fa-solid fa-eye"></i>
+                      Ver más
+                    </div>
+                  </div>
+              </div>
+              <div class="userCard">
+                <img src="https://images.unsplash.com/photo-1651008376811-b90baee60c1f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="userImg">
+                <div class="name">Dr. Alice Doe</div>
+                <div class="adress">Guadalajara, Jalisco</div>
+                <div class="desc">Cardiologist</div>
+                <div class="actions-container">
+                  <div class="">
+                    <i class="fa-solid fa-phone"></i>
+                    Contactar
+                  </div>
+                  <div class="">
+                    <i class="fa-solid fa-eye"></i>
+                    Ver más
+                  </div>
+                </div>
+            </div>
+          </div>
+       </div>
      </section>
      <!-- Catálogo grados-->
      <section class="body-section container hidden" id="seccion-grados">
