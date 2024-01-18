@@ -263,7 +263,7 @@ var homeLayout = (function() {
               },
               {
                 timelineTime: '7:25 AM',
-                timelineDescription: 'Medico expide receta',
+                timelineDescription: 'Medico expide receta Medico expide receta Medico expide receta Medico expide receta',
                 start: '2014-07-13T16:00:00',
                 timelineImportance: 'Moderado',
                 className:'status-moderado'
@@ -274,14 +274,9 @@ var homeLayout = (function() {
             var options = {
               // specify a template for the items
               template: template,
-             
               margin:150,
-              horizontalScroll:true,
               height:800,
               width:800,
-              zoom:false,
-              zoomKey: 'ctrlKey',
-              itemsAlwaysDraggable:false
             };
 
             // Create a Timeline
