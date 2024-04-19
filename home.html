@@ -34,7 +34,7 @@
             class="sidebar-logo"
           >
         <div class="section-label">General</div>
-        <div class="sidebar-element selected-item" data-target="#dashboard-view">
+        <div class="sidebar-element" data-target="#dashboard-view">
           <i class="fas fa-home"></i>
           Dashboard
         </div>
@@ -81,6 +81,10 @@
         <div class="sidebar-element" data-target="#perfil-paciente-view">
           <i class="fa-solid fa-pen-to-square"></i>
           Modulo editar
+        </div>
+        <div class="sidebar-element selected-item" data-target="#chatBox">
+          <i class="fa-solid fa-pen-to-square"></i>
+          Chatbox
         </div>
     </section>
     <div class="" style="flex:1;" id="body-sections">
@@ -791,8 +795,67 @@
           </div>
         </div>
       </section>
+      <!-- Seccion perfil del paciente -->
+      <section class="body-section container active-section" id="chatBox">
+        <div class="box">
+          <div class="chatbox-wrapper">
+            <div class="chatbox">
+              <div class="message user-message">
+                <div class="msg-header">
+                  <i class="fa-solid fa-eye-slash"></i>
+                  <i class="fa-solid fa-copy"></i>
+                  <div class="msg-separator"></div>
+                  <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="msg-picture">
+                  <div class="msg-username">James Johnson</div>
+                </div>
+                <div class="msg-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ex reiciendis vel. Lorem, ipsum dolor.</div>
+                <div class="msg-date">10:34 pm</div>
+              </div>
+              <div class="message ia-message">
+                <div class="msg-header">
+                  <img src="./assets/img/companydefault.webp" alt="" class="msg-picture">
+                  <div class="msg-username">Nummuss Med</div>
+                  <div class="msg-separator"></div>
+                  <i class="fa-solid fa-eye-slash"></i>
+                  <i class="fa-solid fa-copy"></i>
+                </div>
+                <div class="msg-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ex reiciendis vel. Lorem. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel culpa ad dolorum temporibus veritatis voluptas?</div>
+                <div class="msg-date">10:35 pm</div>
+              </div>
+              <div class="message user-message">
+                <div class="msg-header">
+                  <i class="fa-solid fa-eye-slash"></i>
+                  <i class="fa-solid fa-copy"></i>
+                  <div class="msg-separator"></div>
+                  <img src="https://images.unsplash.com/photo-1633332755192-727a05c4013d?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" class="msg-picture">
+                  <div class="msg-username">James Johnson</div>
+                </div>
+                <div class="msg-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ex reiciendis vel.</div>
+                <div class="msg-date">12:12 pm</div>
+              </div>
+              <div class="message ia-message">
+                <div class="msg-header">
+                  <img src="./assets/img/companydefault.webp" alt="" class="msg-picture">
+                  <div class="msg-username">Nummuss Med</div>
+                  <div class="msg-separator"></div>
+                  <i class="fa-solid fa-eye-slash"></i>
+                  <i class="fa-solid fa-copy"></i>
+                </div>
+                <div class="msg-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum ex reiciendis vel. Lorem ipsum dolor sit.</div>
+                <div class="msg-date">12:12 pm</div>
+              </div>
+            </div>
+            <div class="textarea-wrapper">
+              <textarea placeholder="Conversa con nuestra inteligencia artificial" class="textarea" name="" id="" cols="30" rows="10"></textarea>
+              <button class="msg-send-button">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
       <!-- Seccion dashboard -->
-      <section class="body-section active-section container" id="dashboard-view">
+      <section class="body-section container hidden" id="dashboard-view">
         <h3 class="my-4">Vista General</h3>
         <div class="row">
             <div class="col-12 col-md-3">

@@ -47,4 +47,100 @@
   filter: brightness(1.25);
 }
 
+.chatbox-wrapper {
+  max-width: 968px;
+  margin: 25px auto;
+}
+.chatbox-wrapper .textarea-wrapper {
+  display: flex;
+  align-items: flex-end;
+  margin-top: 2.5rem;
+}
+.chatbox-wrapper .textarea-wrapper .textarea {
+  border-radius: 0.5rem 0 0 0.5rem;
+  border: none;
+  width: 100%;
+  height: 75px;
+  padding: 10px;
+  background-color: #f5f5f5;
+}
+.chatbox-wrapper .textarea-wrapper .msg-send-button {
+  border: none;
+  background-color: #f5f5f5;
+  font-size: 1.8rem;
+  color: #019c7c;
+  border-radius: 0 0.5rem 0.5rem 0;
+  width: 75px;
+  height: 75px;
+  /*   &:hover {
+    transform: translateY(-50%), scale(1.1);
+  } */
+}
+.chatbox-wrapper .chatbox {
+  width: 100%;
+  max-height: 40rem;
+  overflow: auto;
+}
+.chatbox-wrapper .chatbox .message {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  border-radius: 10px;
+  max-width: 70%;
+}
+.chatbox-wrapper .chatbox .message .msg-header {
+  display: flex;
+  align-items: center;
+}
+.chatbox-wrapper .chatbox .message .msg-header i {
+  font-size: 1rem;
+  color: #dcdcdc;
+  cursor: pointer;
+  margin-right: 0.5rem;
+}
+.chatbox-wrapper .chatbox .message .msg-header i:hover {
+  color: #019c7c;
+}
+.chatbox-wrapper .chatbox .message .msg-separator {
+  flex: 1;
+}
+.chatbox-wrapper .chatbox .message .msg-picture {
+  width: 35px;
+  border-radius: 999px;
+  margin-right: 1rem;
+  margin-bottom: 10px;
+}
+.chatbox-wrapper .chatbox .message .msg-username {
+  font-weight: bold;
+  color: #000;
+}
+.chatbox-wrapper .chatbox .message .msg-desc {
+  border: 1px solid #ededed;
+  padding: 14px;
+  border-radius: 10px;
+}
+.chatbox-wrapper .chatbox .message .msg-date {
+  font-size: 12px;
+  margin-top: 4px;
+}
+.chatbox-wrapper .chatbox .user-message {
+  margin-left: auto;
+}
+.chatbox-wrapper .chatbox .user-message .msg-header {
+  display: flex;
+  justify-content: flex-end;
+}
+.chatbox-wrapper .chatbox .user-message .msg-date {
+  display: flex;
+  justify-content: flex-end;
+}
+.chatbox-wrapper .chatbox .user-message .msg-desc {
+  color: white;
+  background: #019c7c;
+}
+.chatbox-wrapper .chatbox .ia-message .msg-desc {
+  background-color: #f5f5f5;
+}
+
 /*# sourceMappingURL=newStyles.css.map */
