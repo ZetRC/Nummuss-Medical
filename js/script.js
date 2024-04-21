@@ -10,6 +10,8 @@ var homeLayout = (function() {
          functions.handleComboBox();
          functions.handleTimepicker();
          functions.handleTimeline();
+         functions.handleAutosizeTextarea();
+         functions.handleAutoScroll();
 	};
 	
 	var functions = {	
@@ -278,7 +280,17 @@ var homeLayout = (function() {
 
             // Create a Timeline
             var timeline = new vis.Timeline(container, items, options);
-        }
+        },
+        handleAutosizeTextarea : function(){    
+          $(".textarea-autosize").keyup(function(e) {
+            while($(this).outerHeight() < this.scrollHeight + parseFloat($(this).css("borderTopWidth")) + parseFloat($(this).css("borderBottomWidth"))) {
+                $(this).height($(this).height()+1);
+            };
+          });
+        },
+        handleAutoScroll : function(){    
+          $(".chatbox").animate({ scrollTop: $(document).height() }, 500);
+        },
         
 	};
 	
