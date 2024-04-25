@@ -1,5 +1,29 @@
 $main: #019c7c;
 
+::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #fafafa;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: #c7c7c7;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #bcbcbc;
+}
+
+.typing-animation {
+  width: 5px;
+  background: #1a9c7c;
+  height: 15px;
+  animation: typing 0.6s alternate infinite linear;
+  color: $main;
+  display: inline-block;
+}
+
 .typing-animation {
   width: 5px;
   background: #1a9c7c;
