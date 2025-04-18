@@ -306,6 +306,9 @@
 .progress-bar {
   background-color: #019c7c;
 }
+.progress{
+  margin-bottom: 2rem;
+}
 .chart-placeholder {
   height: 200px;
   background-color: #2e3a4e;
@@ -316,29 +319,32 @@
   margin-right: 10px;
 }
 .color-tomato{
-  color: tomato;
-  font-size: 1.5rem;
+  color: rgb(228, 134, 118);
+  font-size: 1.75rem;
   margin-right: 8px;
 }
 
-.human-body {
+.human-body {    
   width: 207px;
   position: relative;
   padding-top: 240px;
   height: 260px;
   display: block;
   padding: 0 8rem;
+  position: relative;
+  top: 9px;
+  transform: scale(.95);
 }
 .human-body svg:hover {
   cursor: pointer;
 }
 .human-body svg:hover path {
-  fill: #ff7d16;
+  fill: #00886a;
 }
 .human-body svg {
   position: absolute;
   left: 50%;
-  fill: #57c9d5;
+  fill: #009a79;
 }
 .human-body svg.head {
   margin-left: -28.5px;
@@ -383,5 +389,98 @@
 #area #data {
   color: black;
 }
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
+
+.human-body-wrapper{
+    position: relative;
+    display: inline-block;
+    color: #009a79;
+    text-decoration: none;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    min-width: 16rem;
+   
+}
+
+
+.human-body-wrapper span{
+    position: absolute;
+    display: block;
+}
+.human-body-wrapper span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg,transparent,#009a79);
+    animation: animate1 1s linear infinite;
+}
+@keyframes animate1{
+    0%{
+        left: -100%;
+    }
+    50%,100%{
+        left: 100%;
+    }
+}
+.human-body-wrapper span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg,transparent,#009a79);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+@keyframes animate2{
+    0%{
+        top: -100%;
+    }
+    50%,100%{
+        top: 100%;
+    }
+}
+.human-body-wrapper span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(270deg,transparent,#009a79);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+@keyframes animate3{
+    0%{
+        right: -100%;
+    }
+    50%,100%{
+        right: 100%;
+    }
+}
+
+
+.human-body-wrapper span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg,transparent,#009a79);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
+    }
+}
+
+
+
 
 /*# sourceMappingURL=newStyles.css.map */
