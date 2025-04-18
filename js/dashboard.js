@@ -567,6 +567,30 @@ var dashboard = (function () {
         series.appear(1000);
         chart.appear(1000, 100);
       });
+
+      const $slides = $('.carousel-slide');
+      let currentIndex = 0;
+  
+      function updateCarousel(index) {
+        $slides.removeClass('is-visible').eq(index).addClass('is-visible');
+      }
+  
+      $('#carouselButtonNext').on('click', function() {
+        currentIndex = (currentIndex + 1) % $slides.length;
+        updateCarousel(currentIndex);
+      });
+  
+      $('#carouselButtonPrev').on('click', function() {
+        currentIndex = (currentIndex - 1 + $slides.length) % $slides.length;
+        updateCarousel(currentIndex);
+      });
+      $('.carousel-wrapper').slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        prevArrow: $('#carouselButtonPrev'),
+        nextArrow: $('#carouselButtonNext')
+      });
     },
   };
 

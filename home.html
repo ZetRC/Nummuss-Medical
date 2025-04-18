@@ -1087,7 +1087,7 @@
       
             <!-- Doctor Info & Diagnosis -->
             <div class="col-md-3">
-              <div class="card p-3 mb-3">
+              <div class="card p-3 mb-2">
                 <div class="d-flex align-items-center">
                   <img 
                     src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
@@ -1101,16 +1101,34 @@
                   </div>
                 </div>
                 <hr />
-                <p>Sex: Male</p>
-                <p>Age: 78</p>
-                <p>Dept.: Cardiology</p>
+                <p><span class="text-main">Departamento:</span> cardiología</p>
+                <p><span class="text-main">Género:</span> Masculino</p>
+                <p class="m-0"><span class="text-main">Edad:</span> 78 años</p>
               </div>
-      
+              <div class="mb-2  ">
+                <div class="card">
+                  <h5 class="px-3 pt-2">Información de medicamentos</h2>
+                  <div id="imageCarouselContainer">
+                    <div class="med-box carousel-slide is-visible border-0">
+                      <p><span class="text-main">Medicamento:</span> Paracetamol</p>
+                      <p><span class="text-main">Dosis:</span> 500mg cada 8 horas</p>
+                      <p><span class="text-main">Fecha recetado:</span> 15 de abril de 2025</p>
+                    </div>
+                    <div class="med-box carousel-slide border-0">
+                      <p><span class="text-main">Medicamento:</span> Ibuprofeno</p>
+                      <p><span class="text-main">Dosis:</span> 350mg cada 6 horas</p>
+                      <p><span class="text-main">Fecha recetado:</span> 15 de febrero de 2025</p>
+                    </div>
+                    <button id="carouselButtonPrev" class="carousel-nav-btn nav-prev">‹</button>
+                    <button id="carouselButtonNext" class="carousel-nav-btn nav-next">›</button>
+                  </div>   
+                </div>
+              </div>
+              
               <div class="card p-3">
-                <h5>Latest Diagnosis</h5>
-                <p class="text-danger">❤️ Heart Disease</p>
-                <p><small>Dilated Cardiomyopathy</small></p>
-                <a href="#" class="btn btn-warning btn-sm">Illness History</a>
+                <p class="text-danger">❤️ Cirugías</p>
+                <p>4 cirugías en los últios 12 meses</p>
+                <a href="#" class="btn btn-main m-0 rounded-btn" data-bs-toggle="modal" data-bs-target="#surgeryModal">Ver información detallada</a>
               </div>
             </div>
           </div>
@@ -1586,6 +1604,48 @@
       </div>
     </div>
   </div>
+  <!-- Modal de info de cirugias -->
+   <!-- Modal -->
+<div class="modal fade" id="surgeryModal" tabindex="-1" aria-labelledby="surgeryModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content rounded-4 shadow">
+
+      <div class="modal-header">
+        <h5 class="modal-title" id="surgeryModalLabel">Detalles de la Cirugía</h5>
+        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+      </div>
+
+      <div class="modal-body">
+        <div class="info-section">
+          <div class="info-label">Tipo de cirugía:</div>
+          <div class="info-value">Apendicectomía laparoscópica</div>
+
+          <div class="info-label">Fecha de operación:</div>
+          <div class="info-value">18 de abril de 2025</div>
+
+          <div class="info-label">Cirujano responsable:</div>
+          <div class="info-value">Dra. María Fernanda Pérez</div>
+
+          <div class="info-label">Notas adicionales:</div>
+          <div class="info-value">El procedimiento fue exitoso. Se recomienda reposo por 7 días.</div>
+        </div>
+        <div class="info-section">
+          <div class="info-label">Tipo de cirugía:</div>
+          <div class="info-value">Colecistectomía abierta</div>
+        
+          <div class="info-label">Fecha de operación:</div>
+          <div class="info-value">12 de marzo de 2024</div>
+        
+          <div class="info-label">Cirujano responsable:</div>
+          <div class="info-value">Dr. Juan Carlos Mendoza</div>
+        
+          <div class="info-label">Notas adicionales:</div>
+          <div class="info-value">Se retiró la vesícula sin complicaciones. Revisar puntos en 10 días.</div>
+        </div>
+        <button type="button" class="btn btn-main m-0" style="float: right;" data-bs-dismiss="modal">Cerrar</button>
+    </div>
+  </div>
+</div>
   <!-- Amcharts -->
   <script src="https://cdn.amcharts.com/lib/5/index.js"></script>
   <script src="https://cdn.amcharts.com/lib/5/percent.js"></script>

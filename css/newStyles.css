@@ -480,7 +480,102 @@
     }
 }
 
+#imageCarouselContainer {
+  position: relative;
+  overflow: hidden;
+}
 
+.carousel-slide {
+  width: 100%;
+  height: 100%;
+  display: none;
+  object-fit: cover;
+}
+
+.carousel-slide.is-visible {
+  display: block;
+}
+
+.carousel-nav-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: #009a797d;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  font-size: 20px;
+  z-index: 10;
+  border-radius: 4px;
+}
+
+.nav-prev { left: 10px; }
+.nav-next { right: 10px; }
+
+/* medicamentos box */
+
+.med-box {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px 50px;
+  width: 100%;
+  border: 1px solid #dcdcdc !important;
+  max-width: 19rem;
+  margin: 0 auto;
+  padding: 10px;
+  margin-bottom: 1rem;
+  margin-top: 0rem;
+}
+
+.med-box h2 {
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: #333;
+  text-align: center;
+}
+
+.med-box p {
+  margin: 8px 0;
+  font-size: 15px;
+  color: #555;
+}
+
+.label {
+  font-weight: bold;
+  color: #222;
+}
+
+.modal-header {
+  background-color: #019c7c;
+  color: white;
+}
+
+.modal-body {
+  background-color: #f8f9fa;
+}
+
+.info-label {
+  font-weight: 600;
+  color: #333;
+}
+
+.info-value {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.modal-footer {
+  background-color: #f1f1f1;
+}
+
+.info-section{
+  border-bottom: 1px solid #dcdcdcdd;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
 
 
 /*# sourceMappingURL=newStyles.css.map */
